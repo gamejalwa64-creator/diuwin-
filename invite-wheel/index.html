@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Wheel - Diuwin | Spin & Win Rewards</title>
+    <meta name="description" content="Learn how to use the Diuwin Invite Wheel. Invite friends, earn free spins and win exciting cash rewards. Join Diuwin today!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diuwin.yor.uk.com/invite-wheel/">
+
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        /* ── PAGE HERO ── */
+        .wheel-hero {
+            background: linear-gradient(160deg, #ff6b00 0%, #ff3300 55%, #cc0000 100%);
+            padding: 50px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wheel-hero::before {
+            content: '🪙';
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            top: -20px;
+            left: -30px;
+            transform: rotate(-20deg);
+        }
+
+        .wheel-hero::after {
+            content: '🪙';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            bottom: -10px;
+            right: -20px;
+            transform: rotate(20deg);
+        }
+
+        .wheel-hero h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        }
+
+        .wheel-hero p {
+            font-size: 16px;
+            color: rgba(255,255,255,0.9);
+            max-width: 480px;
+            margin: 0 auto 28px;
+            line-height: 1.6;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-gold {
+            display: inline-block;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            color: #7a3800;
+            font-size: 16px;
+            font-weight: 900;
+            padding: 14px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(255,140,0,0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(255,140,0,0.6);
+        }
+
+        .btn-outline-white {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 13px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2.5px solid rgba(255,255,255,0.7);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-outline-white:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-3px);
+        }
+
+        /* ── SCREENSHOT SHOWCASE ── */
+        .showcase-section {
+            background: #f9f9f9;
+            padding: 60px 20px;
+        }
+
+        .showcase-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .showcase-img-wrap {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .showcase-img-wrap img {
+            width: 260px;
+            max-width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+            border: 4px solid #fff;
+        }
+
+        .showcase-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .showcase-text .section-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #13BF77, #4CCC77);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .showcase-text h2 {
+            font-size: 28px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .showcase-text p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        /* ── HOW TO CLAIM ── */
+        .how-section {
+            background: #fff;
+            padding: 60px 20px;
+        }
+
+        .how-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .how-inner h2 {
+            font-size: 28px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .how-inner .sub {
+            font-size: 15px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 24px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .step-card {
+            background: linear-gradient(145deg, #f7f7f7, #fff);
+            border-radius: 18px;
+            padding: 26px 22px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+            border: 1px solid #eee;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .step-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+
+        .step-num {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #13BF77, #4CCC77);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .step-icon { font-size: 28px; margin-bottom: 10px; }
+
+        .step-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step-desc strong { color: #cc3300; }
+
+        /* ── RULES SECTION ── */
+        .rules-section {
+            background: linear-gradient(160deg, #ff6b00 0%, #cc0000 100%);
+            padding: 60px 20px;
+            color: #fff;
+        }
+
+        .rules-inner {
+            max-width: 740px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rules-inner h2 {
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 6px;
+        }
+
+        .rules-inner .sub {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 36px;
+        }
+
+        .rules-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: left;
+        }
+
+        .rule-card {
+            background: rgba(255,255,255,0.13);
+            border: 1px solid rgba(255,255,255,0.22);
+            border-radius: 14px;
+            padding: 18px 20px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            backdrop-filter: blur(8px);
+        }
+
+        .rule-icon { font-size: 28px; flex-shrink: 0; }
+
+        .rule-body h4 {
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            color: #ffe082;
+        }
+
+        .rule-body p {
+            font-size: 13.5px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .rule-body strong { color: #ffe082; }
+
+        /* ── PRIZE TABLE ── */
+        .prizes-section {
+            background: #f9f9f9;
+            padding: 60px 20px;
+        }
+
+        .prizes-inner {
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .prizes-inner h2 {
+            font-size: 26px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .prizes-inner .sub {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .prizes-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .prize-pill {
+            background: linear-gradient(135deg, #ff6b00, #cc0000);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 800;
+            padding: 14px 6px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(204,0,0,0.3);
+        }
+
+        /* ── CTA BANNER ── */
+        .cta-banner {
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            font-size: 28px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 28px;
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-banner .btn-gold {
+            font-size: 18px;
+            padding: 16px 48px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .showcase-inner { flex-direction: column; }
+            .showcase-img-wrap img { width: 220px; }
+            .prizes-grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .wheel-hero h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body class="home-page">
+
+    <!-- ===== HEADER (same as index.html) ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="https://diuwin.yor.uk.com/" title="Diuwin">
+                    <img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg>
+            </button>
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item login-btn"><a href="/go/">Log in</a></li>
+                    <li class="nav-item register-btn"><a href="/go/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="wheel-hero">
+        <h1>🎡 Diuwin Invite Wheel</h1>
+        <p>Invite friends, earn free spins, and win exciting cash rewards — it's that simple! Register on Diuwin and unlock the Invite Wheel inside the app.</p>
+        <div class="hero-btns">
+            <a href="/go/" class="btn-gold">🎰 PLAY NOW &amp; SPIN</a>
+            <a href="/go/" class="btn-outline-white">Register Free →</a>
+        </div>
+    </section>
+
+    <!-- ===== SCREENSHOT + DESCRIPTION ===== -->
+    <section class="showcase-section">
+        <div class="showcase-inner">
+            <div class="showcase-img-wrap">
+                <img src="/wp-content/uploads/2025/11/diuwin-invite-wheel.webp"
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'480\' viewBox=\'0 0 260 480\'%3E%3Crect width=\'260\' height=\'480\' rx=\'24\' fill=\'%23ff4500\'/%3E%3Ctext x=\'50%25\' y=\'45%25\' text-anchor=\'middle\' fill=\'%23fff\' font-size=\'60\' font-family=\'Arial\'%3E🎡%3C/text%3E%3Ctext x=\'50%25\' y=\'62%25\' text-anchor=\'middle\' fill=\'%23ffe082\' font-size=\'18\' font-weight=\'bold\' font-family=\'Arial\'%3EInvite Wheel%3C/text%3E%3C/svg%3E'"
+                     alt="Diuwin Invite Wheel App Screenshot - Spin and Win Rewards"
+                     loading="lazy">
+            </div>
+            <div class="showcase-text">
+                <span class="section-tag">🎁 Earn Rewards</span>
+                <h2>What is the Diuwin Invite Wheel?</h2>
+                <p>The <strong>Diuwin Invite Wheel</strong> is a special reward feature inside the Diuwin App where you can spin a fortune wheel to win cash prizes ranging from <strong>₹10 to ₹198</strong> per spin.</p>
+                <p>Each spin is completely free! You earn spins by <strong>inviting friends</strong> to join and deposit on Diuwin. The more friends you invite, the more spins you get — the more you win!</p>
+                <p>Once your accumulated balance reaches <strong>₹300</strong>, you can cashout directly to your bank account or preferred wallet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW TO CLAIM ===== -->
+    <section class="how-section">
+        <div class="how-inner">
+            <h2>How To Claim Your Invite Wheel Bonus</h2>
+            <p class="sub">Follow these simple steps to start spinning and winning</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-icon">📱</div>
+                    <div class="step-title">Register on Diuwin</div>
+                    <div class="step-desc">Click the <strong>Register</strong> button below and create your free account on the Diuwin platform in under 1 minute.</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-icon">🔗</div>
+                    <div class="step-title">Get Your Invite Link</div>
+                    <div class="step-desc">Inside the app, go to the <strong>Promotion</strong> section and copy your unique referral invite link or code.</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-icon">👥</div>
+                    <div class="step-title">Invite Friends</div>
+                    <div class="step-desc">Share your invite link on WhatsApp, Telegram, or social media. When a friend registers <strong>and deposits</strong>, you get <strong>1 free spin</strong>.</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">4</div>
+                    <div class="step-icon">🎡</div>
+                    <div class="step-title">Spin the Wheel</div>
+                    <div class="step-desc">Open the <strong>Invite Wheel</strong> inside the Diuwin app and use your free spins to win cash rewards every day!</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">5</div>
+                    <div class="step-icon">💸</div>
+                    <div class="step-title">Cash Out at ₹300</div>
+                    <div class="step-desc">When your total wheel earnings reach <strong>₹300</strong>, tap the <strong>Cash Out</strong> button to withdraw funds to your bank account.</div>
+                </div>
+            </div>
+
+            <a href="/go/" class="btn btn-primary" style="display:inline-block;">🎰 Register &amp; Start Spinning</a>
+        </div>
+    </section>
+
+    <!-- ===== RULES ===== -->
+    <section class="rules-section">
+        <div class="rules-inner">
+            <h2>📋 Invite Wheel Rules</h2>
+            <p class="sub">Read the rules carefully before you start spinning</p>
+
+            <div class="rules-list">
+                <div class="rule-card">
+                    <div class="rule-icon">💰</div>
+                    <div class="rule-body">
+                        <h4>Cashout Threshold</h4>
+                        <p>When your cumulative wheel earnings reach <strong>₹300</strong>, you can apply for withdrawal using the <strong>Cash Out</strong> button inside the app.</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">🎁</div>
+                    <div class="rule-body">
+                        <h4>Earn Spins by Inviting</h4>
+                        <p>Invite a friend to join as your downline and have them <strong>make their first deposit</strong>. For each qualifying friend, you receive <strong>1 free spin</strong>. Invite more friends to earn unlimited free spins!</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">⏳</div>
+                    <div class="rule-body">
+                        <h4>3-Day Activity Period</h4>
+                        <p>The Invite Wheel activity lasts for <strong>3 days</strong>. After the activity period ends, all accumulated rewards are <strong>reset</strong> and a new activity cycle begins fresh.</p>
+                    </div>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">🌅</div>
+                    <div class="rule-body">
+                        <h4>1 Daily Free Spin</h4>
+                        <p>Each user is eligible for <strong>1 free spin per day</strong>, regardless of invitations. Your daily free spin count resets automatically at <strong>24:00 (midnight)</strong> every night.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRIZES ===== -->
+    <section class="prizes-section">
+        <div class="prizes-inner">
+            <h2>🏆 Possible Prize Values</h2>
+            <p class="sub">Every spin gives you a chance to win one of these rewards</p>
+            <div class="prizes-grid-2">
+                <div class="prize-pill">₹10</div>
+                <div class="prize-pill">₹38</div>
+                <div class="prize-pill">₹58</div>
+                <div class="prize-pill">₹98</div>
+                <div class="prize-pill">₹118</div>
+                <div class="prize-pill">₹158</div>
+                <div class="prize-pill">₹178</div>
+                <div class="prize-pill">₹198</div>
+            </div>
+            <p style="color:#666;font-size:13px;">Prizes are randomly distributed with each spin.</p>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner">
+        <h2>Ready to Spin & Win? 🎡</h2>
+        <p>Register on Diuwin for free, invite your friends, and start spinning the Invite Wheel to earn real cash rewards every day!</p>
+        <a href="/go/" class="btn-gold">🎰 REGISTER &amp; SPIN NOW</a>
+    </section>
+
+    <!-- ===== FOOTER (same as index.html) ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-bar">
+                &copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

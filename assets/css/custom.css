@@ -1,0 +1,552 @@
+/* ================================================
+   Diuwin Custom Styles
+   Domain: diuwin.yor.uk.com
+   ================================================ */
+
+.entry-title {
+  text-align: center;
+}
+
+.wp-block-cover,
+.wp-block-buttons,
+.wp-block-image {
+  margin-bottom: 15px;
+}
+
+.wp-block-cover {
+  margin-top: -20px;
+}
+
+.logo img {
+  border-radius: 30px;
+  box-shadow: 0 0 100px #fff;
+}
+
+.main-navigation .main-nav > ul > li {
+  margin-right: 5px;
+}
+
+.main-navigation .main-nav ul li a {
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+/* ── Login / Register Buttons ── */
+.loginbtn {
+  background: linear-gradient(180deg, #13bf77 13.44%, #4ccc77 86.56%);
+  font-weight: 700;
+  letter-spacing: 0.05333rem;
+  line-height: 0.8rem;
+  padding: 0 0.48rem;
+  border-radius: 0.13333rem;
+  font-size: 0.32rem;
+}
+
+.registerbtn {
+  border: 0.01333rem solid #1ab266;
+  text-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
+  letter-spacing: 0.05333rem;
+  line-height: 0.8rem;
+  padding: 0 0.48rem;
+  border-radius: 0.13333rem;
+  font-size: 0.32rem;
+}
+
+.registerbtn a,
+.registerbtn a:hover {
+  color: #1ab266 !important;
+}
+
+.loginbtn a,
+.loginbtn a:hover {
+  color: #fff !important;
+}
+
+/* ── Headings ── */
+h2 {
+  color: #fff;
+  padding: 18px 28px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #13bf77 0%, #4ccc77 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(19, 191, 119, 0.3);
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.38;
+  background:
+    radial-gradient(circle at 15% 25%, #fff 5%, transparent 2%),
+    radial-gradient(circle at 85% 75%, #fff 5%, transparent 2%),
+    radial-gradient(circle at 90% 20%, #fff 1.8%, transparent 1.5%),
+    radial-gradient(circle at 10% 80%, #fff 1.5%, transparent 1.5%),
+    conic-gradient(
+      from 45deg at 92% 12%,
+      transparent 0deg,
+      #fff 1deg,
+      transparent 2deg,
+      transparent 30deg,
+      #fff 31deg,
+      transparent 32deg,
+      transparent 60deg
+    ),
+    conic-gradient(
+      from -45deg at 8% 88%,
+      transparent 0deg,
+      #fff 1deg,
+      transparent 2deg,
+      transparent 30deg,
+      #fff 31deg,
+      transparent 32deg,
+      transparent 60deg
+    );
+  border-radius: 10px;
+}
+
+h3:not(.gms h3):not(.fts h3):not(.rank-math-question):not(.tms h3) {
+  color: #13bf77;
+  padding: 14px 24px;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+  position: relative;
+  background: linear-gradient(
+    120deg,
+    rgba(19, 191, 119, 0.25) 0%,
+    rgba(76, 204, 119, 0.15) 100%
+  );
+  border-left: 4px solid #13bf77;
+  border-radius: 6px;
+}
+
+h3:not(.gms h3):not(.fts h3):not(.rank-math-question):not(.tms h3)::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #4ccc77;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(76, 204, 119, 0.5);
+}
+
+/* ── Games Section ── */
+.games-grid {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.gms {
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.25) 0%,
+    rgba(76, 204, 119, 0.18) 100%
+  );
+  border: 2px solid rgba(19, 191, 119, 0.4);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.gms::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #13bf77 0%, #4ccc77 100%);
+  border-radius: 16px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.gms:hover::before {
+  opacity: 0.15;
+}
+
+.gms:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.35) 0%,
+    rgba(76, 204, 119, 0.25) 100%
+  );
+  border-color: #13bf77;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(19, 191, 119, 0.4);
+}
+
+.gms h3 {
+  color: #13bf77;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 18px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gms img {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 14px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(19, 191, 119, 0.4);
+  transition: all 0.3s ease;
+}
+
+.gms:hover img {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(19, 191, 119, 0.6);
+}
+
+.gms p {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Features Section ── */
+.ft {
+  counter-reset: feature-counter;
+  background: linear-gradient(
+    145deg,
+    rgba(19, 191, 119, 0.18) 0%,
+    rgba(76, 204, 119, 0.25) 100%
+  );
+  border-radius: 16px;
+  padding: 38px 32px;
+  border-left: 5px solid #13bf77;
+  border-right: 1px solid rgba(19, 191, 119, 0.3);
+  border-top: 1px solid rgba(19, 191, 119, 0.3);
+  border-bottom: 1px solid rgba(19, 191, 119, 0.3);
+  box-shadow: 0 8px 25px rgba(19, 191, 119, 0.2);
+}
+
+.ft p {
+  counter-increment: feature-counter;
+  position: relative;
+  padding-left: 60px;
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #000;
+}
+
+.ft p::before {
+  content: counter(feature-counter);
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 42px;
+  height: 42px;
+  background: #13bf77;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: 3px solid rgba(76, 204, 119, 0.4);
+  box-shadow: 0 0 15px rgba(19, 191, 119, 0.5);
+}
+
+.ft strong {
+  color: #4ccc77;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-right: 10px;
+}
+
+/* ── Testimonials Section ── */
+.tms {
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.15) 0%,
+    rgba(76, 204, 119, 0.08) 100%
+  );
+  border: 2px solid rgba(19, 191, 119, 0.3);
+  border-radius: 16px;
+  padding: 28px 32px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(19, 191, 119, 0.2);
+  transition: all 0.35s ease;
+}
+
+.tms::before {
+  content: "\201C";
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 60px;
+  color: rgba(19, 191, 119, 0.25);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.tms:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(19, 191, 119, 0.35);
+  border-color: #13bf77;
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.2) 0%,
+    rgba(76, 204, 119, 0.12) 100%
+  );
+}
+
+.tms h3 {
+  color: #4ccc77;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  padding-left: 45px;
+}
+
+.tms h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #13bf77, transparent);
+  margin-top: 8px;
+}
+
+.tms h3::before {
+  content: "\2605\2605\2605\2605\2605";
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+
+.tms p {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 16px 0 0;
+  padding-left: 45px;
+  font-style: italic;
+}
+
+/* ── FAQ Accordion ── */
+.rank-math-list-item {
+  border: 2px solid rgba(19, 191, 119, 0.4);
+  border-radius: 12px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(19, 191, 119, 0.2);
+  background-color: rgba(19, 191, 119, 0.05);
+  transition: all 0.3s ease;
+}
+
+.rank-math-list-item:hover {
+  border-color: #13bf77;
+  box-shadow: 0 8px 25px rgba(19, 191, 119, 0.3);
+}
+
+.rank-math-question {
+  background: linear-gradient(135deg, #13bf77 0%, #4ccc77 100%);
+  color: #fff;
+  margin: 0;
+  padding: 16px 50px 16px 20px;
+  font-size: 18px !important;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.rank-math-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.rank-math-question:hover {
+  background: linear-gradient(135deg, #4ccc77 0%, #13bf77 100%);
+}
+
+.rank-math-answer {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 18px 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.rank-math-answer a {
+  color: #13bf77;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.rank-math-answer a:hover {
+  color: #4ccc77;
+}
+
+/* ── WordPress Buttons ── */
+.wp-block-button__link,
+.button,
+.btn,
+input[type="submit"],
+input[type="button"],
+.gp-button {
+  background: linear-gradient(135deg, #13bf77 0%, #4ccc77 100%) !important;
+  color: #fff !important;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none !important;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(19, 191, 119, 0.35);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-block-button__link::before,
+.button::before,
+.btn::before,
+input[type="submit"]::before,
+input[type="button"]::before,
+.gp-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.wp-block-button__link:hover,
+.button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.gp-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(19, 191, 119, 0.5);
+}
+
+.wp-block-button__link:hover::before,
+.button:hover::before,
+.btn:hover::before,
+input[type="submit"]:hover::before,
+input[type="button"]:hover::before,
+.gp-button:hover::before {
+  left: 100%;
+}
+
+.wp-block-button__link:active,
+.button:active,
+.btn:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+.gp-button:active {
+  transform: translateY(-2px) scale(1);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background: transparent !important;
+  color: #13bf77 !important;
+  border: 2px solid #13bf77;
+  box-shadow: 0 0 0 rgba(19, 191, 119, 0);
+  transition: all 0.3s ease;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.15) 0%,
+    rgba(76, 204, 119, 0.15) 100%
+  ) !important;
+  border-color: #4ccc77;
+  color: #4ccc77 !important;
+  box-shadow: 0 0 15px rgba(19, 191, 119, 0.3);
+}
+
+/* ── Steps Section ── */
+.st {
+  counter-reset: step-counter;
+  background: linear-gradient(
+    135deg,
+    rgba(19, 191, 119, 0.16) 0%,
+    rgba(76, 204, 119, 0.22) 100%
+  );
+  border-radius: 16px;
+  padding: 36px 32px;
+  border: 2px solid rgba(19, 191, 119, 0.3);
+  box-shadow: 0 6px 20px rgba(19, 191, 119, 0.25);
+}
+
+.st p {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 55px;
+  margin: 22px 0;
+  line-height: 1.7;
+  color: #000;
+}
+
+.st p::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #13bf77 0%, #4ccc77 100%);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 12px rgba(19, 191, 119, 0.4);
+}
+
+.st strong {
+  color: #4ccc77;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-right: 10px;
+}

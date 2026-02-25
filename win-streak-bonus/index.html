@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Streak Bonus - Diuwin | Win Up to 100% on Wingo</title>
+    <meta name="description" content="Diuwin Win Streak Bonus - Win 10, 20, 30, 40 or 50 in a row on Wingo and earn up to 100% bonus on your betting amount. Claim today!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diuwin.yor.uk.com/win-streak-bonus/">
+
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── HERO ── */
+        .streak-hero { width: 100%; line-height: 0; display: block; }
+        .streak-hero img { width: 100%; height: auto; display: block; }
+
+        /* ── DARK GREEN BODY ── */
+        .streak-body {
+            background: linear-gradient(160deg, #0a1f0d 0%, #0d2e10 50%, #0a1f0d 100%);
+            padding: 50px 20px;
+        }
+
+        .streak-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        /* ── POSTER ── */
+        .streak-poster { flex: 0 0 auto; display: flex; justify-content: center; }
+        .streak-poster img {
+            width: min(300px, 90vw);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+        }
+
+        /* ── PANEL ── */
+        .streak-panel {
+            flex: 1;
+            min-width: 270px;
+        }
+
+        .streak-panel .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd200, #f7971e);
+            color: #7a2e00;
+            font-size: 11px;
+            font-weight: 900;
+            padding: 4px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
+        .streak-panel h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(32px, 6vw, 56px);
+            font-weight: 700;
+            color: #ffd200;
+            text-transform: uppercase;
+            line-height: 1.0;
+            margin-bottom: 4px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .streak-panel h1 span { color: #fff; }
+
+        .streak-panel .subline {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        /* ── PRIZE CARDS ── */
+        .prizes-label {
+            display: inline-block;
+            background: #13BF77;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 900;
+            padding: 6px 28px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .prize-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .prize-card {
+            background: rgba(255,255,255,0.07);
+            border: 1.5px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .prize-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateX(4px);
+        }
+
+        .prize-streak {
+            font-size: 22px;
+            font-weight: 900;
+            color: #ffd200;
+            font-family: 'Oswald', sans-serif;
+            min-width: 52px;
+        }
+
+        .prize-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.4;
+        }
+
+        .prize-desc strong { color: #13BF77; }
+
+        .prize-pct {
+            margin-left: auto;
+            font-size: 24px;
+            font-weight: 900;
+            color: #13BF77;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* highlight top tier */
+        .prize-card.top-tier {
+            background: rgba(19,191,119,0.12);
+            border-color: #13BF77;
+        }
+
+        /* ── APPLY NOTE ── */
+        .apply-note {
+            background: rgba(255,210,0,0.1);
+            border: 1.5px solid rgba(255,210,0,0.35);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+        }
+
+        .apply-note p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+
+        .apply-note p strong { color: #ffd200; }
+
+        /* ── BUTTONS ── */
+        .streak-btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-streak-primary {
+            flex: 1;
+            min-width: 160px;
+            display: inline-block;
+            background: linear-gradient(135deg, #13BF77, #4CCC77);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 900;
+            padding: 14px 20px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(19,191,119,0.45);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-streak-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 26px rgba(19,191,119,0.6);
+        }
+
+        .btn-streak-secondary {
+            flex: 1;
+            min-width: 140px;
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 13px 18px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid rgba(255,255,255,0.45);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-streak-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+        }
+
+        /* ── HOW IT WORKS ── */
+        .how-section {
+            background: #061409;
+            padding: 56px 20px;
+        }
+
+        .how-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .how-inner h2 {
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .how-inner .sub {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 36px;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .how-step {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 22px 18px;
+            transition: transform 0.2s;
+        }
+
+        .how-step:hover { transform: translateY(-4px); }
+
+        .how-step .icon { font-size: 32px; margin-bottom: 12px; }
+
+        .how-step h4 {
+            font-size: 14px;
+            font-weight: 800;
+            color: #13BF77;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .how-step p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+
+        .how-step p strong { color: #ffd200; }
+
+        /* ── TERMS SECTION ── */
+        .terms-section {
+            background: #0a1f0d;
+            padding: 56px 20px;
+        }
+
+        .terms-inner {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .terms-inner h2 {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffd200;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,210,0,0.25);
+            padding-bottom: 10px;
+        }
+
+        .terms-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .terms-list li {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            color: rgba(255,255,255,0.82);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .terms-list li:last-child { border-bottom: none; }
+
+        .term-num {
+            min-width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #13BF77, #4CCC77);
+            color: #fff;
+            font-weight: 900;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .terms-list li strong { color: #ffd200; }
+
+        /* ── BOTTOM CTA ── */
+        .cta-bottom {
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            padding: 56px 20px;
+            text-align: center;
+        }
+
+        .cta-bottom h2 { font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 8px; }
+
+        .cta-bottom p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.88);
+            max-width: 420px;
+            margin: 0 auto 26px;
+            line-height: 1.6;
+        }
+
+        .btn-cta-white {
+            display: inline-block;
+            background: #fff;
+            color: #014d1c;
+            font-size: 18px;
+            font-weight: 900;
+            padding: 16px 52px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-cta-white:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px rgba(0,0,0,0.3);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 660px) {
+            .streak-inner { flex-direction: column; align-items: center; }
+            .streak-panel { max-width: 100%; }
+            .streak-btns { flex-direction: column; }
+        }
+    </style>
+</head>
+<body class="home-page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="https://diuwin.yor.uk.com/" title="Diuwin">
+                    <img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg>
+            </button>
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item login-btn"><a href="/go/">Log in</a></li>
+                    <li class="nav-item register-btn"><a href="/go/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO BANNER ===== -->
+    <div class="streak-hero">
+        <img src="/wp-content/uploads/2025/11/6120657932920753515_121.jpg"
+             alt="Diuwin Win Streak Bonus - Up to 100% on Wingo Games"
+             loading="eager">
+    </div>
+
+    <!-- ===== POSTER + PRIZES ===== -->
+    <div class="streak-body">
+        <div class="streak-inner">
+
+            <!-- Vertical Poster -->
+            <div class="streak-poster">
+                <img src="/wp-content/uploads/2025/11/6120657932920753516_120.jpg"
+                     alt="Diuwin Winstreak Bonus Poster - Prizes and Terms"
+                     loading="lazy">
+            </div>
+
+            <!-- Panel -->
+            <div class="streak-panel">
+                <span class="badge">🔥 Win Streak</span>
+                <h1><span>Win</span>streak</h1>
+                <h1>Bonus</h1>
+                <div class="subline">Valid for Wingo Game · No Betting Limit</div>
+
+                <!-- Prizes -->
+                <div class="prizes-label">🏆 Prizes</div>
+
+                <div class="prize-cards">
+                    <div class="prize-card">
+                        <div class="prize-streak">10X</div>
+                        <div class="prize-desc">Win <strong>10 in a row</strong><br>Betting amount × 20%</div>
+                        <div class="prize-pct">20%</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-streak">20X</div>
+                        <div class="prize-desc">Win <strong>20 in a row</strong><br>Betting amount × 30%</div>
+                        <div class="prize-pct">30%</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-streak">30X</div>
+                        <div class="prize-desc">Win <strong>30 in a row</strong><br>Betting amount × 40%</div>
+                        <div class="prize-pct">40%</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-streak">40X</div>
+                        <div class="prize-desc">Win <strong>40 in a row</strong><br>Betting amount × 50%</div>
+                        <div class="prize-pct">50%</div>
+                    </div>
+                    <div class="prize-card top-tier">
+                        <div class="prize-streak">50X</div>
+                        <div class="prize-desc">Win <strong>50 in a row</strong><br>Betting amount × 100%</div>
+                        <div class="prize-pct">100%</div>
+                    </div>
+                </div>
+
+                <!-- Apply Note -->
+                <div class="apply-note">
+                    <p>📢 <strong>Meet the conditions</strong> and contact <strong>Customer Service</strong> to apply for your bonus. Note: The same period is <strong>not included</strong> in the calculation.</p>
+                </div>
+
+                <!-- Buttons -->
+                <div class="streak-btns">
+                    <a href="/go/" class="btn-streak-primary">🎮 PLAY WINGO NOW</a>
+                    <a href="https://diuwin.yor.uk.com/contact-us/" class="btn-streak-secondary">📞 Claim Bonus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-section">
+        <div class="how-inner">
+            <h2>🎯 How to Earn the Win Streak Bonus</h2>
+            <p class="sub">Simple steps to claim your consecutive win rewards</p>
+            <div class="how-steps">
+                <div class="how-step">
+                    <div class="icon">📱</div>
+                    <h4>Step 1 — Register</h4>
+                    <p>Create your free <strong>Diuwin account</strong> and deposit to get started on the Wingo game.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">🎰</div>
+                    <h4>Step 2 — Play Wingo</h4>
+                    <p>Start playing the <strong>Wingo game</strong>. This bonus is exclusively valid for Wingo with no betting limit.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">🔥</div>
+                    <h4>Step 3 — Build Your Streak</h4>
+                    <p>Win <strong>10, 20, 30, 40 or 50 consecutive rounds</strong> in a row to unlock your bonus tier.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">📞</div>
+                    <h4>Step 4 — Contact Support</h4>
+                    <p>Contact <strong>Customer Service</strong> on the same day your streak is achieved to claim your bonus.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">💰</div>
+                    <h4>Step 5 — Receive Bonus</h4>
+                    <p>Get your <strong>20% to 100% bonus</strong> added to your wallet based on your total betting amount during the streak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TERMS & CONDITIONS ===== -->
+    <section class="terms-section">
+        <div class="terms-inner">
+            <h2>📋 Terms and Conditions</h2>
+            <ol class="terms-list">
+                <li>
+                    <span class="term-num">1</span>
+                    <span>Valid for <strong>Wingo Game only</strong>.</span>
+                </li>
+                <li>
+                    <span class="term-num">2</span>
+                    <span><strong>No betting limit</strong> — any bet size qualifies.</span>
+                </li>
+                <li>
+                    <span class="term-num">3</span>
+                    <span>The bonus must be claimed on the <strong>same day</strong> the winning streak is obtained.</span>
+                </li>
+                <li>
+                    <span class="term-num">4</span>
+                    <span>You must <strong>contact Customer Service</strong> to claim the bonus.</span>
+                </li>
+                <li>
+                    <span class="term-num">5</span>
+                    <span>Members involved in this bonus are not allowed to have the same data as other members, such as the <strong>same name, same IP address, same phone number and same email</strong>.</span>
+                </li>
+                <li>
+                    <span class="term-num">6</span>
+                    <span>All activities are intended for <strong>genuine members</strong>. If there is fraud in utilizing this activity, DiuWin has the right to <strong>cancel the bonus or freeze the account</strong>.</span>
+                </li>
+                <li>
+                    <span class="term-num">7</span>
+                    <span>DiuWin has the right to <strong>stop this event without prior notice</strong>. The final decision belongs to DiuWin.</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===== CTA BOTTOM ===== -->
+    <section class="cta-bottom">
+        <h2>🔥 Start Your Win Streak Today!</h2>
+        <p>Play Wingo on Diuwin, build a winning streak of up to 50 rounds, and claim a <strong>100% bonus</strong> on your total betting amount!</p>
+        <a href="/go/" class="btn-cta-white">🎮 PLAY WINGO NOW</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-bar">
+                &copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

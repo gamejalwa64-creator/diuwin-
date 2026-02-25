@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP & Monthly Bonus - Diuwin | 10 VIP Levels & Exclusive Rewards</title>
+<meta name="description" content="Diuwin VIP Program — 10 exclusive levels with upgrade bonuses up to ₹1,00,000, monthly rewards, safe interest, and real-time rebates. The higher your VIP, the bigger your benefits!">
+<link rel="canonical" href="https://diuwin.yor.uk.com/vip/">
+<link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+/* HERO */
+.vip-hero{background:linear-gradient(135deg,#0a4d23 0%,#13BF77 60%,#1ed97d 100%);padding:56px 20px 64px;text-align:center;position:relative;overflow:hidden}
+.vip-hero::before{content:'👑';position:absolute;font-size:220px;opacity:.05;right:-30px;top:-30px}
+.vip-hero .badge{display:inline-block;background:rgba(255,255,255,.18);color:#fff;font-size:11px;font-weight:800;padding:4px 18px;border-radius:20px;text-transform:uppercase;letter-spacing:2px;margin-bottom:14px}
+.vip-hero h1{font-family:'Oswald',sans-serif;font-size:clamp(32px,7vw,60px);font-weight:700;color:#fff;text-transform:uppercase;line-height:1.05;margin-bottom:8px}
+.vip-hero h1 span{color:#ffd200}
+.vip-hero p{font-size:15px;color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 24px;line-height:1.65}
+.vip-hero p strong{color:#ffd200}
+.hero-stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:26px}
+.hs{text-align:center}
+.hs .n{font-family:'Oswald',sans-serif;font-size:28px;font-weight:700;color:#ffd200}
+.hs .l{font-size:11px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1px}
+.hero-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn-gold{display:inline-block;background:linear-gradient(135deg,#f7971e,#ffd200);color:#5a3000;font-size:15px;font-weight:900;padding:13px 32px;border-radius:50px;text-decoration:none;box-shadow:0 6px 20px rgba(255,210,0,.4);transition:transform .2s}
+.btn-gold:hover{transform:translateY(-3px)}
+.btn-wh{display:inline-block;background:transparent;color:#fff;font-size:14px;font-weight:700;padding:12px 22px;border-radius:50px;text-decoration:none;border:2px solid rgba(255,255,255,.5);transition:background .2s,transform .2s}
+.btn-wh:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+/* LEVEL SELECTOR */
+.level-nav{background:#fff;border-bottom:2px solid #eee;padding:12px 20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow-x:auto;white-space:nowrap}
+.level-nav-inner{display:flex;gap:6px;max-width:1100px;margin:0 auto}
+.lnb{display:inline-block;background:#f0f4f8;color:#555;font-size:12px;font-weight:800;padding:7px 14px;border-radius:20px;text-decoration:none;white-space:nowrap;transition:background .2s,color .2s;flex-shrink:0;cursor:pointer;border:none}
+.lnb:hover,.lnb.active{background:linear-gradient(135deg,#13BF77,#0da864);color:#fff}
+/* VIP TABLE */
+.vip-table-wrap{max-width:1100px;margin:0 auto;padding:56px 20px}
+.vip-table-wrap h2{font-size:22px;font-weight:900;color:#1a1a1a;margin-bottom:6px}
+.vip-table-wrap .sub{font-size:14px;color:#888;margin-bottom:24px}
+.vip-tbl{width:100%;border-collapse:collapse;font-size:13px;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.1);border:1px solid #e0e0e0}
+.vip-tbl thead tr{background:#13BF77}
+.vip-tbl thead th{color:#fff;padding:12px 10px;text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:.6px;border-right:1px solid rgba(255,255,255,.2)}
+.vip-tbl thead th:last-child{border-right:none}
+.vip-tbl tbody tr{border-bottom:1px solid #eee}
+.vip-tbl tbody tr:last-child{border-bottom:none}
+.vip-tbl tbody tr:hover{background:#f0faf5}
+.vip-tbl tbody td{padding:11px 10px;text-align:center;color:#444;font-weight:600;border-right:1px solid #eee}
+.vip-tbl tbody td:last-child{border-right:none}
+.vip-tbl tbody td.vname{font-weight:900;font-size:14px}
+.vip-tbl tbody td.bonus{color:#e53935;font-weight:800}
+.vip-tbl tbody td.monthly{color:#9c27b0;font-weight:800}
+.vip-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:800;color:#fff}
+/* VIP CARDS */
+.vip-cards-section{background:#f4f6fb;padding:56px 20px}
+.vip-cards-inner{max-width:1100px;margin:0 auto}
+.vip-cards-inner h2{font-size:22px;font-weight:900;color:#1a1a1a;margin-bottom:6px;text-align:center}
+.vip-cards-inner .sub{font-size:14px;color:#888;margin-bottom:30px;text-align:center}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.vip-card{border-radius:20px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.10);transition:transform .2s,box-shadow .2s}
+.vip-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.16)}
+.vc-header{padding:20px 22px 16px;position:relative;overflow:hidden}
+.vc-header::after{content:'';position:absolute;right:-20px;top:-20px;width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.12)}
+.vc-badge{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.vc-badge .vip-level{font-family:'Oswald',sans-serif;font-size:26px;font-weight:700;color:#fff}
+.vc-badge .crown{font-size:22px}
+.vc-exp{font-size:12px;color:rgba(255,255,255,.82);margin-bottom:4px}
+.vc-exp strong{color:#fff}
+.vc-body{background:#fff;padding:18px 22px}
+.vc-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f0f0;font-size:13px}
+.vc-row:last-child{border-bottom:none}
+.vc-row .label{color:#666;display:flex;align-items:center;gap:6px}
+.vc-row .value{font-weight:800;color:#1a1a1a}
+.vc-row .value.red{color:#e53935}
+.vc-row .value.purple{color:#9c27b0}
+.vc-row .value.green{color:#13BF77}
+/* BENEFITS SECTION */
+.benefits-section{background:#fff;padding:56px 20px}
+.benefits-inner{max-width:860px;margin:0 auto}
+.benefits-inner h2{font-size:22px;font-weight:900;color:#1a1a1a;margin-bottom:6px}
+.benefits-inner .sub{font-size:14px;color:#888;margin-bottom:28px}
+.benefit-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.benefit-card{border-radius:16px;padding:22px 20px;border:2px solid #eee;transition:transform .2s,box-shadow .2s,border-color .2s}
+.benefit-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.12);border-color:#13BF77}
+.benefit-card .icon{font-size:32px;margin-bottom:12px}
+.benefit-card h4{font-size:14px;font-weight:900;color:#13BF77;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.benefit-card p{font-size:13px;color:#666;line-height:1.6}
+/* RULES */
+.rules-section{background:#f4f6fb;padding:56px 20px}
+.rules-inner{max-width:820px;margin:0 auto}
+.rules-inner h2{font-size:22px;font-weight:900;color:#1a1a1a;margin-bottom:6px}
+.rules-inner .sub{font-size:14px;color:#888;margin-bottom:26px}
+.rule-cards{display:flex;flex-direction:column;gap:12px}
+.rule-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.rc-header{background:#13BF77;color:#fff;padding:10px 18px;font-size:13px;font-weight:800;display:flex;align-items:center;gap:8px}
+.rc-body{padding:14px 18px;font-size:14px;color:#444;line-height:1.7}
+.rc-body strong{color:#e53935}
+.rc-body em{color:#13BF77;font-style:normal;font-weight:700}
+/* MONTHLY BONUS */
+.monthly-section{background:#fff;padding:56px 20px}
+.monthly-inner{max-width:820px;margin:0 auto;text-align:center}
+.monthly-inner h2{font-size:22px;font-weight:900;color:#1a1a1a;margin-bottom:6px}
+.monthly-inner .sub{font-size:14px;color:#888;margin-bottom:26px}
+.monthly-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:24px;text-align:left}
+.monthly-item{background:linear-gradient(135deg,#f8fcff,#f0faf5);border:2px solid #e0f5ea;border-radius:14px;padding:16px}
+.monthly-item .mi-level{font-size:12px;font-weight:800;color:#13BF77;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.monthly-item .mi-amount{font-size:24px;font-weight:900;color:#9c27b0;font-family:'Oswald',sans-serif}
+.monthly-item .mi-note{font-size:11px;color:#888;margin-top:4px}
+.monthly-info{background:linear-gradient(135deg,#f0fdf8,#e6fbf0);border:1.5px solid rgba(19,191,119,.3);border-radius:12px;padding:16px 18px;font-size:14px;color:#1a6b40;line-height:1.65;text-align:left;margin-bottom:20px}
+.monthly-info strong{font-weight:800}
+/* CTA */
+.cta-bottom{background:linear-gradient(135deg,#ffd200,#f7971e);padding:56px 20px;text-align:center}
+.cta-bottom h2{font-size:26px;font-weight:900;color:#5a2d00;margin-bottom:8px}
+.cta-bottom p{font-size:15px;color:rgba(90,45,0,.8);max-width:420px;margin:0 auto 24px;line-height:1.6}
+.btn-green-cta{display:inline-block;background:#054d1c;color:#ffd200;font-size:18px;font-weight:900;padding:15px 48px;border-radius:50px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .2s}
+.btn-green-cta:hover{transform:translateY(-4px)}
+/* RESPONSIVE */
+@media(max-width:600px){.cards-grid{grid-template-columns:1fr}.monthly-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body class="home-page">
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <div class="site-logo"><a href="https://diuwin.yor.uk.com/"><img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img"></a></div>
+    <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle"><svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg></button>
+    <nav class="main-navigation" id="main-navigation"><ul class="nav-menu"><li class="nav-item login-btn"><a href="/go/">Log in</a></li><li class="nav-item register-btn"><a href="/go/">Register</a></li></ul></nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="vip-hero">
+  <div class="badge">👑 Exclusive VIP Program</div>
+  <h1>Diuwin <span>VIP</span></h1>
+  <h1>&amp; Monthly <span>Bonus</span></h1>
+  <p>10 exclusive VIP levels with upgrade rewards up to <strong>₹1,00,000</strong>, monthly bonuses, safe interest boosts, and real-time rebates. The higher your level, the greater your rewards!</p>
+  <div class="hero-stats">
+    <div class="hs"><div class="n">10</div><div class="l">VIP Levels</div></div>
+    <div class="hs"><div class="n">₹1,00,000</div><div class="l">Max Upgrade Bonus</div></div>
+    <div class="hs"><div class="n">0.5%</div><div class="l">Max Rebate Rate</div></div>
+    <div class="hs"><div class="n">1st</div><div class="l">Monthly Payout Day</div></div>
+  </div>
+  <div class="hero-btns">
+    <a href="/go/" class="btn-gold">👑 CLAIM VIP REWARDS</a>
+    <a href="#vip-levels" class="btn-wh">📋 View All Levels</a>
+  </div>
+</section>
+
+<!-- LEVEL NAV -->
+<div class="level-nav">
+  <div class="level-nav-inner">
+    <button class="lnb active" onclick="scrollToCard(0)">VIP 0</button>
+    <button class="lnb" onclick="scrollToCard(1)">VIP 1</button>
+    <button class="lnb" onclick="scrollToCard(2)">VIP 2</button>
+    <button class="lnb" onclick="scrollToCard(3)">VIP 3</button>
+    <button class="lnb" onclick="scrollToCard(4)">VIP 4</button>
+    <button class="lnb" onclick="scrollToCard(5)">VIP 5</button>
+    <button class="lnb" onclick="scrollToCard(6)">VIP 6</button>
+    <button class="lnb" onclick="scrollToCard(7)">VIP 7</button>
+    <button class="lnb" onclick="scrollToCard(8)">VIP 8</button>
+    <button class="lnb" onclick="scrollToCard(9)">VIP 9</button>
+    <button class="lnb" onclick="scrollToCard(10)">VIP 10</button>
+  </div>
+</div>
+
+<!-- VIP OVERVIEW TABLE -->
+<div class="vip-table-wrap" id="vip-levels">
+  <h2>📊 All VIP Levels — Overview</h2>
+  <p class="sub">Bet ₹1 = 1 EXP · VIP level rewards settled at 2:00 AM on the 1st of every month</p>
+  <div style="overflow-x:auto">
+  <table class="vip-tbl">
+    <thead><tr>
+      <th>Level</th><th>EXP Required</th><th>Upgrade Bonus (₹)</th><th>Monthly Bonus (₹)</th><th>Safe Interest</th><th>Rebate Rate</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="vname"><span class="vip-tag" style="background:#9e9e9e">VIP 0</span></td><td>0</td><td class="bonus">—</td><td class="monthly">—</td><td>—</td><td>—</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#78909c">VIP 1</span></td><td>2,000</td><td class="bonus">₹30</td><td class="monthly">—</td><td>0.010%</td><td>0.100%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#ffa726">VIP 2</span></td><td>20,000</td><td class="bonus">₹150</td><td class="monthly">—</td><td>0.010%</td><td>0.200%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#e57373">VIP 3</span></td><td>2,00,000</td><td class="bonus">₹690</td><td class="monthly">₹290</td><td>0.015%</td><td>0.225%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#ab47bc">VIP 4</span></td><td>10,00,000</td><td class="bonus">₹2,000</td><td class="monthly">₹800</td><td>0.020%</td><td>0.250%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#42a5f5">VIP 5</span></td><td>50,00,000</td><td class="bonus">₹5,000</td><td class="monthly">₹2,000</td><td>0.025%</td><td>0.300%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#26a69a">VIP 6</span></td><td>2,00,00,000</td><td class="bonus">₹12,000</td><td class="monthly">₹5,000</td><td>0.030%</td><td>0.350%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#ef5350">VIP 7</span></td><td>5,00,00,000</td><td class="bonus">₹30,000</td><td class="monthly">₹12,000</td><td>0.035%</td><td>0.375%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#c0ca33">VIP 8</span></td><td>10,00,00,000</td><td class="bonus">₹50,000</td><td class="monthly">₹25,000</td><td>0.040%</td><td>0.400%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:#ff7043">VIP 9</span></td><td>30,00,00,000</td><td class="bonus">₹80,000</td><td class="monthly">₹50,000</td><td>0.045%</td><td>0.450%</td></tr>
+      <tr><td class="vname"><span class="vip-tag" style="background:linear-gradient(135deg,#ffd200,#f7971e);color:#5a2d00">VIP 10</span></td><td>80,00,00,000</td><td class="bonus">₹1,00,000</td><td class="monthly">₹1,00,000</td><td>0.050%</td><td>0.500%</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- VIP CARDS -->
+<section class="vip-cards-section">
+  <div class="vip-cards-inner">
+    <h2>🏅 VIP Level Details</h2>
+    <p class="sub">Click any card to explore benefits for each level</p>
+    <div class="cards-grid" id="vip-cards-grid">
+
+      <!-- VIP0 -->
+      <div class="vip-card" id="vcard-0">
+        <div class="vc-header" style="background:linear-gradient(135deg,#757575,#9e9e9e)">
+          <div class="vc-badge"><span class="crown">🎮</span><span class="vip-level">VIP 0</span></div>
+          <div class="vc-exp">Starting Level · <strong>0 EXP</strong> required</div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value">—</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value">—</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">—</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">—</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">2,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP1 -->
+      <div class="vip-card" id="vcard-1">
+        <div class="vc-header" style="background:linear-gradient(135deg,#546e7a,#78909c)">
+          <div class="vc-badge"><span class="crown">⭐</span><span class="vip-level">VIP 1</span></div>
+          <div class="vc-exp">Requires <strong>2,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹30</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value">—</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.010%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.100%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">20,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP2 -->
+      <div class="vip-card" id="vcard-2">
+        <div class="vc-header" style="background:linear-gradient(135deg,#e65100,#ffa726)">
+          <div class="vc-badge"><span class="crown">⭐⭐</span><span class="vip-level">VIP 2</span></div>
+          <div class="vc-exp">Requires <strong>20,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹150</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value">—</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.010%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.200%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">2,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP3 -->
+      <div class="vip-card" id="vcard-3">
+        <div class="vc-header" style="background:linear-gradient(135deg,#c62828,#e57373)">
+          <div class="vc-badge"><span class="crown">💎</span><span class="vip-level">VIP 3</span></div>
+          <div class="vc-exp">Requires <strong>2,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹690</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹290</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.015%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.225%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">10,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP4 -->
+      <div class="vip-card" id="vcard-4">
+        <div class="vc-header" style="background:linear-gradient(135deg,#6a1b9a,#ab47bc)">
+          <div class="vc-badge"><span class="crown">💎💎</span><span class="vip-level">VIP 4</span></div>
+          <div class="vc-exp">Requires <strong>10,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹2,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹800</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.020%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.250%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">50,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP5 -->
+      <div class="vip-card" id="vcard-5">
+        <div class="vc-header" style="background:linear-gradient(135deg,#0d47a1,#42a5f5)">
+          <div class="vc-badge"><span class="crown">🏆</span><span class="vip-level">VIP 5</span></div>
+          <div class="vc-exp">Requires <strong>50,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹5,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹2,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.025%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.300%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">2,00,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP6 -->
+      <div class="vip-card" id="vcard-6">
+        <div class="vc-header" style="background:linear-gradient(135deg,#00695c,#26a69a)">
+          <div class="vc-badge"><span class="crown">🏆🏆</span><span class="vip-level">VIP 6</span></div>
+          <div class="vc-exp">Requires <strong>2,00,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹12,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹5,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.030%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.350%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">5,00,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP7 -->
+      <div class="vip-card" id="vcard-7">
+        <div class="vc-header" style="background:linear-gradient(135deg,#b71c1c,#ef5350)">
+          <div class="vc-badge"><span class="crown">👑</span><span class="vip-level">VIP 7</span></div>
+          <div class="vc-exp">Requires <strong>5,00,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹30,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹12,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.035%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.375%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">10,00,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP8 -->
+      <div class="vip-card" id="vcard-8">
+        <div class="vc-header" style="background:linear-gradient(135deg,#827717,#c0ca33)">
+          <div class="vc-badge"><span class="crown">👑👑</span><span class="vip-level">VIP 8</span></div>
+          <div class="vc-exp">Requires <strong>10,00,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹50,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹25,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.040%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.400%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">30,00,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP9 -->
+      <div class="vip-card" id="vcard-9">
+        <div class="vc-header" style="background:linear-gradient(135deg,#bf360c,#ff7043)">
+          <div class="vc-badge"><span class="crown">💫</span><span class="vip-level">VIP 9</span></div>
+          <div class="vc-exp">Requires <strong>30,00,00,000 EXP</strong></div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹80,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹50,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.045%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.450%</span></div>
+          <div class="vc-row"><span class="label">📋 EXP to Next</span><span class="value">80,00,00,000 EXP</span></div>
+        </div>
+      </div>
+
+      <!-- VIP10 -->
+      <div class="vip-card" id="vcard-10" style="grid-column:span 1">
+        <div class="vc-header" style="background:linear-gradient(135deg,#ff6f00,#ffd200)">
+          <div class="vc-badge"><span class="crown">🌟</span><span class="vip-level" style="color:#5a2d00">VIP 10</span></div>
+          <div class="vc-exp" style="color:rgba(90,45,0,.8)">Requires <strong style="color:#5a2d00">80,00,00,000 EXP</strong> · MAX LEVEL</div>
+        </div>
+        <div class="vc-body" style="background:linear-gradient(135deg,#fffde7,#fff)">
+          <div class="vc-row"><span class="label">🎁 Upgrade Bonus</span><span class="value red">₹1,00,000</span></div>
+          <div class="vc-row"><span class="label">📅 Monthly Bonus</span><span class="value purple">₹1,00,000</span></div>
+          <div class="vc-row"><span class="label">🏦 Safe Interest</span><span class="value green">0.050%</span></div>
+          <div class="vc-row"><span class="label">💰 Rebate Rate</span><span class="value green">0.500%</span></div>
+          <div class="vc-row"><span class="label">📋 Status</span><span class="value" style="color:#ffa000">👑 MAXIMUM LEVEL</span></div>
+        </div>
+      </div>
+
+    </div><!-- /cards-grid -->
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="benefits-inner">
+    <h2>✨ VIP Member Benefits</h2>
+    <p class="sub">Four exclusive benefits that grow with every VIP level</p>
+    <div class="benefit-cards">
+      <div class="benefit-card">
+        <div class="icon">🎁</div>
+        <h4>Level Up Rewards</h4>
+        <p>Receive a one-time cash bonus every time you upgrade your VIP level. Ranges from ₹30 (VIP1) up to <strong>₹1,00,000 (VIP10)</strong>. Each account can only claim once per level.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon">📅</div>
+        <h4>Monthly Rewards</h4>
+        <p>VIP3 and above members earn a <strong>monthly cash bonus</strong> credited automatically on the 1st of every month at 2:00 AM. Can only be claimed once per month.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon">🏦</div>
+        <h4>Safe Interest Boost</h4>
+        <p>VIP members get an <strong>additional daily interest</strong> on their Safe balance. The higher your VIP level, the higher the safe interest rate — up to <strong>0.05%/day</strong>.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon">💰</div>
+        <h4>Real-Time Rebate</h4>
+        <p>The higher the VIP level, the <strong>higher the return rate</strong>. All games are calculated in real-time and can be self-rewarded! Rebates up to <strong>0.5%</strong> at VIP10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MONTHLY BONUS SECTION -->
+<section class="monthly-section">
+  <div class="monthly-inner">
+    <h2>📅 Monthly Bonus Details</h2>
+    <p class="sub">Settled automatically on the 1st of every month at 2:00 AM</p>
+    <div class="monthly-grid">
+      <div class="monthly-item"><div class="mi-level">VIP 3</div><div class="mi-amount">₹290</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 4</div><div class="mi-amount">₹800</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 5</div><div class="mi-amount">₹2,000</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 6</div><div class="mi-amount">₹5,000</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 7</div><div class="mi-amount">₹12,000</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 8</div><div class="mi-amount">₹25,000</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item"><div class="mi-level">VIP 9</div><div class="mi-amount">₹50,000</div><div class="mi-note">Per month</div></div>
+      <div class="monthly-item" style="background:linear-gradient(135deg,#fffde7,#fff8e1);border-color:#ffd200"><div class="mi-level" style="color:#f7971e">VIP 10</div><div class="mi-amount" style="color:#f7971e">₹1,00,000</div><div class="mi-note">Per month</div></div>
+    </div>
+    <div class="monthly-info">
+      ⚠️ <strong>Monthly Reward Rules:</strong> VIP members can earn the highest level of VIP rewards <strong>once a month</strong>. Prizes cannot be accumulated. Any unclaimed rewards will be <strong>refreshed on the next settlement day</strong>.<br><br>
+      📌 <strong>Example:</strong> If VIP1 earns ₹500 monthly and upgrades to VIP2, the ₹500 earned in the current month will be <strong>deducted</strong> from the VIP2 monthly reward.
+    </div>
+    <a href="/go/" class="btn-gold" style="font-size:16px; padding:14px 36px;">📅 Claim Monthly Bonus</a>
+  </div>
+</section>
+
+<!-- VIP RULES -->
+<section class="rules-section">
+  <div class="rules-inner">
+    <h2>📋 VIP Rules &amp; Policies</h2>
+    <p class="sub">Read all rules carefully to maintain and grow your VIP level</p>
+    <div class="rule-cards">
+      <div class="rule-card">
+        <div class="rc-header">📈 Upgrade Standard</div>
+        <div class="rc-body">The VIP member's experience points (valid bet amount) that meet the requirements of the corresponding rank will be promoted to the corresponding VIP level. The member's VIP data statistics period starts from <em>00:00:00</em> on the day the VIP system launched. VIP level calculation is <strong>refreshed every 10 minutes</strong>! The experience level is calculated according to valid odds <strong>1:1</strong> (Bet ₹1 = 1 EXP).</div>
+      </div>
+      <div class="rule-card">
+        <div class="rc-header">⬆️ Upgrade Order</div>
+        <div class="rc-body">The VIP level that meets the corresponding requirements can be promoted by <strong>one level every day</strong>, but the VIP level <strong>cannot be promoted by leapfrogging</strong>. You must go through each level in order.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rc-header">🔧 Level Maintenance</div>
+        <div class="rc-body">VIP members need to complete the maintenance requirements of the corresponding level within <strong>30 days</strong> after the "VIP level change". If the promotion is completed during this period, the maintenance requirements will be calculated according to the current level.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rc-header">⬇️ Downgrade Standard</div>
+        <div class="rc-body">If a VIP member <strong>fails to complete</strong> the corresponding level maintenance requirements within 30 days, the system will automatically deduct the experience points corresponding to the level. If the experience points are insufficient, the level will be <strong>downgraded</strong>, and the corresponding discounts will be adjusted to the downgraded level accordingly.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rc-header">🎁 Upgrade Bonus</div>
+        <div class="rc-body">The upgrade benefits can be claimed on the VIP page after the member reaches the VIP membership level. <strong>Each VIP member can only get the upgrade reward of each level once.</strong> These rewards are one-time per level.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rc-header">📅 Monthly Reward</div>
+        <div class="rc-body">VIP members can earn the highest level of VIP rewards <strong>once a month</strong>. Rewards can only be received once a month and <strong>prizes cannot be accumulated</strong>. Any unclaimed rewards will be refreshed on the next settlement day. Monthly rewards are settled at <em>2:00 AM on the 1st of every month</em>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bottom">
+  <h2>👑 Start Your VIP Journey!</h2>
+  <p>Register today, make your first deposit and start climbing the VIP ladder to unlock exclusive bonuses every month!</p>
+  <a href="/go/" class="btn-green-cta">🚀 REGISTER &amp; BECOME VIP</a>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <nav class="footer-nav"><ul>
+      <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+      <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+      <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+      <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+      <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+      <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+    </ul></nav>
+    <div class="copyright-bar">&copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a></div>
+  </div>
+</footer>
+
+<script src="/assets/js/script.js"></script>
+<script>
+function scrollToCard(n){
+  var el=document.getElementById('vcard-'+n);
+  if(el){el.scrollIntoView({behavior:'smooth',block:'center'});}
+  document.querySelectorAll('.lnb').forEach((b,i)=>{b.classList.toggle('active',i===n);});
+}
+</script>
+</body>
+</html>

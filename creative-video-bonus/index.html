@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Video Bonus - Diuwin | Earn Up to ₹25,000</title>
+    <meta name="description" content="Make a video about Diuwin on YouTube, Instagram or Facebook and earn up to ₹25,000 bonus! Creative Video Event - Get it All ₹75,000 total prizes.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diuwin.yor.uk.com/creative-video-bonus/">
+
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── HERO ── */
+        .video-hero { width: 100%; line-height: 0; }
+        .video-hero img { width: 100%; height: auto; display: block; }
+
+        /* ── DARK BODY ── */
+        .video-body {
+            background: linear-gradient(160deg, #0d2e10 0%, #0a3d14 50%, #0d2e10 100%);
+            padding: 50px 20px 60px;
+        }
+
+        .video-inner {
+            max-width: 1020px;
+            margin: 0 auto;
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        /* ── POSTER ── */
+        .video-poster { flex: 0 0 auto; display: flex; justify-content: center; }
+        .video-poster img {
+            width: min(280px, 90vw);
+            border-radius: 20px;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+        }
+
+        /* ── PANEL ── */
+        .video-panel { flex: 1; min-width: 270px; }
+
+        .video-panel .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 900;
+            padding: 4px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 14px;
+        }
+
+        .video-panel h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.05;
+            margin-bottom: 2px;
+        }
+
+        .video-panel h1 .gold { color: #ffd200; }
+        .video-panel h1 .green { color: #13BF77; }
+
+        .video-panel .tagline {
+            font-size: 15px;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 28px;
+            line-height: 1.5;
+        }
+
+        .video-panel .tagline strong { color: #ffd200; }
+
+        /* ── PLATFORM TABS ── */
+        .platform-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 18px;
+            border-radius: 30px;
+            border: 2px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            border-color: currentColor;
+            color: #fff;
+            background: rgba(255,255,255,0.12);
+        }
+
+        .tab-btn.yt { --c: #ff0000; }
+        .tab-btn.ig { --c: #e1306c; }
+        .tab-btn.fb { --c: #1877f2; }
+
+        .tab-btn.yt.active { border-color: #ff0000; background: rgba(255,0,0,0.15); color:#fff; }
+        .tab-btn.ig.active { border-color: #e1306c; background: rgba(225,48,108,0.15); color:#fff; }
+        .tab-btn.fb.active { border-color: #1877f2; background: rgba(24,119,242,0.15); color:#fff; }
+
+        .tab-icon { font-size: 18px; }
+
+        /* ── BONUS TABLE ── */
+        .bonus-table-wrap {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            margin-bottom: 22px;
+            border: 1.5px solid rgba(255,255,255,0.12);
+        }
+
+        .bonus-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+
+        .bonus-table thead tr { background: rgba(0,0,0,0.4); }
+
+        .bonus-table thead th {
+            color: #ffd200;
+            font-weight: 900;
+            padding: 13px 16px;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-right: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .bonus-table thead th:last-child { border-right: none; }
+
+        .bonus-table tbody tr {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.05);
+            transition: background 0.15s;
+        }
+
+        .bonus-table tbody tr:nth-child(odd) { background: rgba(255,255,255,0.09); }
+        .bonus-table tbody tr:hover { background: rgba(255,255,255,0.16); }
+        .bonus-table tbody tr:last-child { border-bottom: none; }
+
+        .bonus-table tbody td {
+            padding: 12px 16px;
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-weight: 700;
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .bonus-table tbody td:last-child { border-right: none; }
+        .bonus-table tbody td.reward { color: #ffd200; font-size: 16px; font-weight: 900; }
+
+        .top-row td { color: #fff !important; }
+        .top-row td.reward { color: #13BF77 !important; font-size: 18px; }
+
+        /* ── CLAIM NOTE ── */
+        .claim-note {
+            background: linear-gradient(135deg, rgba(19,191,119,0.15), rgba(19,191,119,0.05));
+            border: 1.5px solid rgba(19,191,119,0.4);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 22px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .claim-note .icon { font-size: 28px; flex-shrink: 0; }
+        .claim-note p { font-size: 13.5px; color: rgba(255,255,255,0.85); line-height: 1.6; }
+        .claim-note p strong { color: #13BF77; }
+
+        /* ── BUTTONS ── */
+        .video-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        .btn-red {
+            flex: 1; min-width: 150px;
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+            color: #fff; font-size: 15px; font-weight: 900;
+            padding: 14px 18px; border-radius: 50px; text-align: center;
+            text-decoration: none; box-shadow: 0 6px 18px rgba(255,0,0,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-red:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(255,0,0,0.55); }
+
+        .btn-wl {
+            flex: 1; min-width: 140px;
+            display: inline-block; background: transparent; color: #fff;
+            font-size: 14px; font-weight: 700; padding: 13px 16px; border-radius: 50px;
+            text-align: center; text-decoration: none; border: 2px solid rgba(255,255,255,0.4);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-wl:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+
+        /* ── PLATFORMS SECTION ── */
+        .platforms-section {
+            background: #061409;
+            padding: 56px 20px;
+        }
+
+        .platforms-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .platforms-inner h2 {
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .platforms-inner .sub {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 36px;
+        }
+
+        .platform-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .platform-card {
+            border-radius: 18px;
+            padding: 28px 22px;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .platform-card:hover { transform: translateY(-6px); }
+
+        .platform-card.yt { background: linear-gradient(145deg, #1a0000, #2d0000); border: 1.5px solid rgba(255,0,0,0.3); }
+        .platform-card.ig { background: linear-gradient(145deg, #1a001a, #2d0820); border: 1.5px solid rgba(225,48,108,0.3); }
+        .platform-card.fb { background: linear-gradient(145deg, #00061a, #001030); border: 1.5px solid rgba(24,119,242,0.3); }
+
+        .pc-icon { font-size: 40px; margin-bottom: 12px; }
+        .pc-name { font-size: 16px; font-weight: 900; color: #fff; margin-bottom: 4px; }
+        .pc-desc { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.5; margin-bottom: 16px; }
+
+        .pc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .pc-table th { color: rgba(255,255,255,0.55); font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 6px; text-align: center; }
+        .pc-table td { padding: 6px 6px; text-align: center; color: #fff; font-weight: 600; border-top: 1px solid rgba(255,255,255,0.07); }
+        .pc-table td:last-child { color: #ffd200; font-weight: 800; }
+
+        /* ── HOW TO APPLY ── */
+        .how-section { background: linear-gradient(135deg, #0a3d14, #0d2e10); padding: 56px 20px; }
+
+        .how-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+        .how-inner h2 { font-size: 24px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+        .how-inner .sub { font-size: 14px; color: rgba(255,255,255,0.55); margin-bottom: 36px; }
+
+        .steps-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+            gap: 18px;
+        }
+
+        .how-step {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 22px 16px;
+            transition: transform 0.2s;
+        }
+
+        .how-step:hover { transform: translateY(-5px); }
+        .how-step .icon { font-size: 32px; margin-bottom: 12px; }
+        .how-step h4 { font-size: 13px; font-weight: 800; color: #13BF77; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .how-step p { font-size: 12.5px; color: rgba(255,255,255,0.7); line-height: 1.6; }
+        .how-step p strong { color: #ffd200; }
+
+        /* ── TERMS ── */
+        .terms-section { background: #061409; padding: 56px 20px; }
+        .terms-inner { max-width: 860px; margin: 0 auto; }
+        .terms-inner h2 { font-size: 20px; font-weight: 900; color: #ffd200; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; border-bottom: 2px solid rgba(255,210,0,0.25); padding-bottom: 10px; }
+
+        .terms-list { list-style: none; padding: 0; }
+        .terms-list li { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07); color: rgba(255,255,255,0.82); font-size: 14px; line-height: 1.7; }
+        .terms-list li:last-child { border-bottom: none; }
+        .term-num { min-width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, #ff0000, #cc0000); color: #fff; font-weight: 900; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+        .terms-list li strong { color: #ffd200; }
+
+        /* ── CTA BOTTOM ── */
+        .cta-bottom {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #990000 100%);
+            padding: 56px 20px; text-align: center;
+        }
+        .cta-bottom h2 { font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+        .cta-bottom .cta-big { font-size: 42px; font-weight: 900; color: #ffd200; margin-bottom: 8px; text-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .cta-bottom p { font-size: 14px; color: rgba(255,255,255,0.85); max-width: 420px; margin: 0 auto 26px; line-height: 1.6; }
+        .btn-white { display: inline-block; background: #fff; color: #cc0000; font-size: 18px; font-weight: 900; padding: 16px 52px; border-radius: 50px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: transform 0.2s; }
+        .btn-white:hover { transform: translateY(-4px); }
+
+        /* RESPONSIVE */
+        @media (max-width: 660px) {
+            .video-inner { flex-direction: column; align-items: center; }
+            .video-panel { max-width: 100%; }
+            .video-btns { flex-direction: column; }
+        }
+    </style>
+</head>
+<body class="home-page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="https://diuwin.yor.uk.com/" title="Diuwin">
+                    <img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg>
+            </button>
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item login-btn"><a href="/go/">Log in</a></li>
+                    <li class="nav-item register-btn"><a href="/go/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO BANNER ===== -->
+    <div class="video-hero">
+        <img src="/wp-content/uploads/2025/11/6120657932920753519_121.jpg"
+             alt="Diuwin Creative Video Bonus - Up to ₹25,000 on YouTube Instagram Facebook"
+             loading="eager">
+    </div>
+
+    <!-- ===== POSTER + INFO ===== -->
+    <div class="video-body">
+        <div class="video-inner">
+
+            <!-- Poster -->
+            <div class="video-poster">
+                <img src="/wp-content/uploads/2025/11/6120657932920753518_121.jpg"
+                     alt="Diuwin Creative Video Event Bonus Table - Viewer Count and Income"
+                     loading="lazy">
+            </div>
+
+            <!-- Panel -->
+            <div class="video-panel">
+                <span class="badge">🎥 Creative Video Event</span>
+                <h1>Get It <span class="gold">All</span></h1>
+                <h1><span class="gold">₹75,000</span></h1>
+                <div class="tagline">Make a <strong>video about Diuwin</strong> on any platform and earn bonus income based on your viewers. <strong>Claim every 30 days!</strong></div>
+
+                <!-- Platform selector tabs (cosmetic) -->
+                <div class="platform-tabs">
+                    <div class="tab-btn yt active">
+                        <span class="tab-icon">▶️</span> YouTube
+                    </div>
+                    <div class="tab-btn ig">
+                        <span class="tab-icon">📸</span> Instagram
+                    </div>
+                    <div class="tab-btn fb">
+                        <span class="tab-icon">👤</span> Facebook
+                    </div>
+                </div>
+
+                <!-- Bonus Table -->
+                <div class="bonus-table-wrap">
+                    <table class="bonus-table">
+                        <thead>
+                            <tr>
+                                <th>👁️ Viewers</th>
+                                <th>💰 Bonus Income</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1,000+</td><td class="reward">₹700</td></tr>
+                            <tr><td>2,500+</td><td class="reward">₹1,500</td></tr>
+                            <tr><td>5,000+</td><td class="reward">₹2,000</td></tr>
+                            <tr><td>10,000+</td><td class="reward">₹5,000</td></tr>
+                            <tr class="top-row"><td><strong>1,00,000+</strong></td><td class="reward">₹25,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Claim note -->
+                <div class="claim-note">
+                    <div class="icon">📅</div>
+                    <p>Claim your bonus <strong>every 30 days</strong> after the video has been published. Bonuses are the same across YouTube, Instagram, and Facebook.</p>
+                </div>
+
+                <!-- Buttons -->
+                <div class="video-btns">
+                    <a href="/go/" class="btn-red">🎥 JOIN & EARN NOW</a>
+                    <a href="https://diuwin.yor.uk.com/contact-us/" class="btn-wl">📞 Claim Bonus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PLATFORM CARDS ===== -->
+    <section class="platforms-section">
+        <div class="platforms-inner">
+            <h2>🌐 Supported Platforms & Bonus Rates</h2>
+            <p class="sub">Earn the same bonus income from any of these platforms</p>
+            <div class="platform-cards">
+
+                <!-- YouTube -->
+                <div class="platform-card yt">
+                    <div class="pc-icon">▶️</div>
+                    <div class="pc-name">YouTube</div>
+                    <div class="pc-desc">Create a Diuwin review or gameplay video and earn based on total video views.</div>
+                    <table class="pc-table">
+                        <thead><tr><th>Viewers</th><th>Bonus</th></tr></thead>
+                        <tbody>
+                            <tr><td>1,000+</td><td>₹700</td></tr>
+                            <tr><td>2,500+</td><td>₹1,500</td></tr>
+                            <tr><td>5,000+</td><td>₹2,000</td></tr>
+                            <tr><td>10,000+</td><td>₹5,000</td></tr>
+                            <tr><td>1,00,000+</td><td>₹25,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Instagram -->
+                <div class="platform-card ig">
+                    <div class="pc-icon">📸</div>
+                    <div class="pc-name">Instagram</div>
+                    <div class="pc-desc">Post a Reel or story about Diuwin and earn bonus based on your Reel views.</div>
+                    <table class="pc-table">
+                        <thead><tr><th>Viewers</th><th>Bonus</th></tr></thead>
+                        <tbody>
+                            <tr><td>1,000+</td><td>₹700</td></tr>
+                            <tr><td>2,500+</td><td>₹1,500</td></tr>
+                            <tr><td>5,000+</td><td>₹2,000</td></tr>
+                            <tr><td>10,000+</td><td>₹5,000</td></tr>
+                            <tr><td>1,00,000+</td><td>₹25,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Facebook -->
+                <div class="platform-card fb">
+                    <div class="pc-icon">👤</div>
+                    <div class="pc-name">Facebook</div>
+                    <div class="pc-desc">Share a Facebook video post or Reel about Diuwin and earn from your views.</div>
+                    <table class="pc-table">
+                        <thead><tr><th>Viewers</th><th>Bonus</th></tr></thead>
+                        <tbody>
+                            <tr><td>1,000+</td><td>₹700</td></tr>
+                            <tr><td>2,500+</td><td>₹1,500</td></tr>
+                            <tr><td>5,000+</td><td>₹2,000</td></tr>
+                            <tr><td>10,000+</td><td>₹5,000</td></tr>
+                            <tr><td>1,00,000+</td><td>₹25,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW TO APPLY ===== -->
+    <section class="how-section">
+        <div class="how-inner">
+            <h2>🎬 How to Apply For the Bonus</h2>
+            <p class="sub">Follow these simple steps to start earning from your videos</p>
+            <div class="steps-row">
+                <div class="how-step">
+                    <div class="icon">📱</div>
+                    <h4>Step 1 — Register</h4>
+                    <p>Create your free <strong>Diuwin account</strong> and complete your profile.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">🎥</div>
+                    <h4>Step 2 — Create Video</h4>
+                    <p>Make a <strong>creative video</strong> about Diuwin — review, gameplay, tutorial, or experience.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">📤</div>
+                    <h4>Step 3 — Publish</h4>
+                    <p>Post it on <strong>YouTube, Instagram or Facebook</strong>. Note the publish date.</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">📊</div>
+                    <h4>Step 4 — Reach Views</h4>
+                    <p>Get <strong>1,000+ views</strong> to qualify. More views = higher bonus tier up to ₹25,000!</p>
+                </div>
+                <div class="how-step">
+                    <div class="icon">📞</div>
+                    <h4>Step 5 — Claim</h4>
+                    <p>Contact <strong>Customer Service</strong> every <strong>30 days</strong> after publish date with proof to claim your bonus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TERMS ===== -->
+    <section class="terms-section">
+        <div class="terms-inner">
+            <h2>📋 Terms and Conditions</h2>
+            <ol class="terms-list">
+                <li>
+                    <span class="term-num">1</span>
+                    <span>Your referral should <strong>not use the same bank details and same IP</strong>. Once detected, you will be ineligible for claiming the bonus.</span>
+                </li>
+                <li>
+                    <span class="term-num">2</span>
+                    <span>In order to secure the safety of both parties, DiuWin has the authority to oblige the members to provide their <strong>valid documents</strong> for verification purposes, whether qualified or not.</span>
+                </li>
+                <li>
+                    <span class="term-num">3</span>
+                    <span>Engaging in this activity <strong>expresses your agreement</strong> to all terms and conditions.</span>
+                </li>
+                <li>
+                    <span class="term-num">4</span>
+                    <span>Bonus must be <strong>claimed every 30 days</strong> after the video has been published. Unclaimed bonuses are forfeited.</span>
+                </li>
+                <li>
+                    <span class="term-num">5</span>
+                    <span>DiuWin has the right to <strong>stop this event without prior notice</strong>. The final decision belongs to DiuWin.</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===== BOTTOM CTA ===== -->
+    <section class="cta-bottom">
+        <h2>🎥 Start Creating Today!</h2>
+        <div class="cta-big">₹75,000 Prize Pool</div>
+        <p>Make a video about Diuwin on YouTube, Instagram or Facebook and earn up to <strong>₹25,000</strong> per video. Claim every 30 days!</p>
+        <a href="/go/" class="btn-white">🎬 REGISTER &amp; PARTICIPATE</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-bar">
+                &copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

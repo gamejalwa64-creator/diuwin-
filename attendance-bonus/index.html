@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Bonus - Diuwin | Daily Login Rewards Up to ₹6,000</title>
+    <meta name="description" content="Earn daily attendance bonuses on Diuwin! Login 7 consecutive days and win up to ₹6,000. The more days you attend, the bigger your reward!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diuwin.yor.uk.com/attendance-bonus/">
+
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── HERO ── */
+        .attend-hero {
+            background: linear-gradient(135deg, #e53935 0%, #ff6b35 100%);
+            padding: 48px 20px 56px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .attend-hero::before {
+            content: '📅';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.06;
+            right: -30px;
+            top: -30px;
+            transform: rotate(10deg);
+        }
+
+        .attend-hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
+        .attend-hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(32px, 7vw, 56px);
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.05;
+            margin-bottom: 6px;
+        }
+
+        .attend-hero h1 span { color: #ffd200; }
+
+        .attend-hero .sub {
+            font-size: 15px;
+            color: rgba(255,255,255,0.88);
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        .attend-hero .sub strong { color: #ffd200; }
+
+        /* ── STAT STRIP ── */
+        .stat-strip {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .stat-item { text-align: center; }
+
+        .stat-item .num {
+            font-size: 32px;
+            font-weight: 900;
+            color: #ffd200;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .stat-item .lbl {
+            font-size: 12px;
+            color: rgba(255,255,255,0.75);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* hero buttons */
+        .hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+        .btn-hero-primary {
+            display: inline-block;
+            background: #ffd200;
+            color: #7a2e00;
+            font-size: 16px;
+            font-weight: 900;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            transition: transform 0.2s;
+        }
+
+        .btn-hero-primary:hover { transform: translateY(-3px); }
+
+        .btn-hero-secondary {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 13px 26px;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2.5px solid rgba(255,255,255,0.6);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-hero-secondary:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
+
+        /* ── POSTER + INFO LAYOUT ── */
+        .attend-layout {
+            max-width: 1020px;
+            margin: 0 auto;
+            padding: 56px 20px;
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .attend-poster { flex: 0 0 auto; display: flex; justify-content: center; }
+        .attend-poster img {
+            width: min(270px, 90vw);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 3px solid #fff;
+        }
+
+        .attend-panel { flex: 1; min-width: 270px; }
+
+        .attend-panel h2 {
+            font-size: 24px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .attend-panel .panel-sub {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 24px;
+        }
+
+        /* ── DAY CARDS GRID ── */
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .day-card {
+            background: linear-gradient(145deg, #fff, #f8f8f8);
+            border-radius: 16px;
+            padding: 18px 10px;
+            text-align: center;
+            border: 2px solid #eee;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            cursor: default;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+            border-color: #13BF77;
+        }
+
+        .day-card .reward-amt {
+            font-size: 18px;
+            font-weight: 900;
+            color: #e53935;
+            margin-bottom: 8px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .day-card .coin-icon { font-size: 36px; margin-bottom: 6px; }
+
+        .day-card .day-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Day 7 — special big card */
+        .day-card.special {
+            grid-column: span 3;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+            padding: 22px 24px;
+            background: linear-gradient(135deg, #fff7e6, #fff);
+            border-color: #ffd200;
+        }
+
+        .day-card.special .gift-icon { font-size: 56px; flex-shrink: 0; }
+
+        .day-card.special .special-right .reward-amt {
+            font-size: 28px;
+            color: #e53935;
+        }
+
+        .day-card.special .special-right .day-label {
+            font-size: 14px;
+            color: #555;
+            text-transform: none;
+            margin-top: 4px;
+        }
+
+        .day-card.special .special-right .special-note {
+            font-size: 12px;
+            color: #13BF77;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        /* ── GAME RULES TABLE ── */
+        .rules-table-wrap {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .rules-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .rules-table thead tr { background: #13BF77; }
+
+        .rules-table thead th {
+            color: #fff;
+            font-weight: 800;
+            padding: 13px 16px;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .rules-table thead th:last-child { border-right: none; }
+
+        .rules-table tbody tr { border-bottom: 1px solid #eee; }
+        .rules-table tbody tr:last-child { border-bottom: none; }
+        .rules-table tbody tr:hover { background: #f0faf5; }
+
+        .rules-table tbody td {
+            padding: 12px 16px;
+            text-align: center;
+            color: #333;
+            font-weight: 600;
+            border-right: 1px solid #eee;
+        }
+
+        .rules-table tbody td:last-child { border-right: none; }
+        .rules-table tbody td.att-day { font-size: 18px; font-weight: 900; color: #13BF77; }
+        .rules-table tbody td.bonus-amt { color: #e53935; font-weight: 900; font-size: 15px; }
+        .rules-table tbody td.acc-amt { color: #555; }
+
+        /* Panel CTA button */
+        .panel-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        .btn-green-big {
+            flex: 1; min-width: 160px;
+            display: inline-block;
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            color: #fff; font-size: 15px; font-weight: 900;
+            padding: 14px 20px; border-radius: 50px;
+            text-align: center; text-decoration: none;
+            box-shadow: 0 6px 18px rgba(19,191,119,0.4);
+            transition: transform 0.2s;
+        }
+        .btn-green-big:hover { transform: translateY(-3px); }
+
+        .btn-outline-g {
+            flex: 1; min-width: 130px;
+            display: inline-block; background: transparent; color: #13BF77;
+            font-size: 14px; font-weight: 700; padding: 13px 16px; border-radius: 50px;
+            text-align: center; text-decoration: none; border: 2px solid #13BF77;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-outline-g:hover { background: rgba(19,191,119,0.08); transform: translateY(-3px); }
+
+        /* ── HOW IT WORKS ── */
+        .how-section { background: #f5f5f5; padding: 56px 20px; }
+        .how-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+        .how-inner h2 { font-size: 24px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .how-inner .sub { font-size: 14px; color: #777; margin-bottom: 36px; }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+        }
+
+        .h-step {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px 16px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+        }
+
+        .h-step:hover { transform: translateY(-5px); }
+        .h-step .icon { font-size: 34px; margin-bottom: 12px; }
+        .h-step h4 { font-size: 14px; font-weight: 800; color: #13BF77; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .h-step p { font-size: 12.5px; color: #666; line-height: 1.65; }
+        .h-step p strong { color: #e53935; }
+
+        /* ── RULES SECTION ── */
+        .game-rules-section { background: #fff; padding: 56px 20px; }
+        .gr-inner { max-width: 740px; margin: 0 auto; }
+        .gr-inner h2 { font-size: 22px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .gr-inner .sub { font-size: 14px; color: #777; margin-bottom: 28px; }
+
+        .rule-items { display: flex; flex-direction: column; gap: 14px; }
+
+        .rule-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 16px 18px;
+            border-left: 4px solid #13BF77;
+        }
+
+        .rule-diamond { color: #13BF77; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+        .rule-text { font-size: 14px; color: #444; line-height: 1.65; }
+        .rule-text strong { color: #e53935; }
+
+        /* ── CTA BOTTOM ── */
+        .cta-bottom {
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            padding: 56px 20px; text-align: center;
+        }
+        .cta-bottom h2 { font-size: 28px; font-weight: 900; color: #fff; margin-bottom: 8px; }
+        .cta-bottom p { font-size: 15px; color: rgba(255,255,255,0.88); max-width: 420px; margin: 0 auto 26px; line-height: 1.6; }
+        .cta-bottom p strong { color: #ffd200; }
+        .btn-cta-white { display: inline-block; background: #fff; color: #014d1c; font-size: 18px; font-weight: 900; padding: 16px 52px; border-radius: 50px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.2); transition: transform 0.2s; }
+        .btn-cta-white:hover { transform: translateY(-4px); }
+
+        /* RESPONSIVE */
+        @media (max-width: 660px) {
+            .attend-layout { flex-direction: column; align-items: center; }
+            .attend-panel { max-width: 100%; }
+            .panel-btns { flex-direction: column; }
+            .day-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body class="home-page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="https://diuwin.yor.uk.com/" title="Diuwin">
+                    <img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg>
+            </button>
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item login-btn"><a href="/go/">Log in</a></li>
+                    <li class="nav-item register-btn"><a href="/go/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="attend-hero">
+        <div class="badge">📅 Daily Attendance</div>
+        <h1>Attendance <span>Bonus</span></h1>
+        <h1>Login <span>7 Days</span> & Win</h1>
+        <div class="sub">Login <strong>every day</strong> and get bigger rewards each consecutive day. Up to <strong>₹6,000</strong> for 7 days in a row!</div>
+
+        <div class="stat-strip">
+            <div class="stat-item">
+                <div class="num">7</div>
+                <div class="lbl">Max Streak Days</div>
+            </div>
+            <div class="stat-item">
+                <div class="num">₹6,000</div>
+                <div class="lbl">Day 7 Reward</div>
+            </div>
+            <div class="stat-item">
+                <div class="num">₹4</div>
+                <div class="lbl">Day 1 Reward</div>
+            </div>
+        </div>
+
+        <div class="hero-btns">
+            <a href="/go/" class="btn-hero-primary">🎁 CLAIM ATTENDANCE BONUS</a>
+            <a href="#rules" class="btn-hero-secondary">📋 View Rules</a>
+        </div>
+    </section>
+
+    <!-- ===== POSTER + PANEL ===== -->
+    <div style="background:#fff;">
+        <div class="attend-layout">
+
+            <!-- Poster -->
+            <div class="attend-poster">
+                <img src="/wp-content/uploads/2025/11/6120657932920753523_121.jpg"
+                     alt="Diuwin Attendance Bonus - Game Rules Screenshot showing 7-day login rewards"
+                     loading="lazy">
+            </div>
+
+            <!-- Right Panel -->
+            <div class="attend-panel">
+                <h2>🪙 7-Day Reward Calendar</h2>
+                <p class="panel-sub">The more consecutive days you login, the bigger your reward!</p>
+
+                <!-- Day Cards -->
+                <div class="day-grid">
+                    <div class="day-card">
+                        <div class="reward-amt">₹4</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 1</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="reward-amt">₹20</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 2</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="reward-amt">₹65</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 3</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="reward-amt">₹180</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 4</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="reward-amt">₹450</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 5</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="reward-amt">₹2,200</div>
+                        <div class="coin-icon">⭐</div>
+                        <div class="day-label">Day 6</div>
+                    </div>
+                    <!-- Day 7 full width special card -->
+                    <div class="day-card special">
+                        <div class="gift-icon">🎁</div>
+                        <div class="special-right">
+                            <div class="reward-amt">₹6,000.00</div>
+                            <div class="day-label">Day 7 — Maximum Reward!</div>
+                            <div class="special-note">✅ Requires ₹2,00,000 accumulated amount</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Table -->
+                <div class="rules-table-wrap">
+                    <table class="rules-table">
+                        <thead>
+                            <tr>
+                                <th>Continuous Attendance</th>
+                                <th>Accumulated Amount</th>
+                                <th>Attendance Bonus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="att-day">1</td><td class="acc-amt">₹200.00</td><td class="bonus-amt">₹4.00</td></tr>
+                            <tr><td class="att-day">2</td><td class="acc-amt">₹500.00</td><td class="bonus-amt">₹20.00</td></tr>
+                            <tr><td class="att-day">3</td><td class="acc-amt">₹3,000.00</td><td class="bonus-amt">₹65.00</td></tr>
+                            <tr><td class="att-day">4</td><td class="acc-amt">₹8,000.00</td><td class="bonus-amt">₹180.00</td></tr>
+                            <tr><td class="att-day">5</td><td class="acc-amt">₹20,000.00</td><td class="bonus-amt">₹450.00</td></tr>
+                            <tr><td class="att-day">6</td><td class="acc-amt">₹80,000.00</td><td class="bonus-amt">₹2,200.00</td></tr>
+                            <tr><td class="att-day">7</td><td class="acc-amt">₹2,00,000.00</td><td class="bonus-amt">₹6,000.00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-btns">
+                    <a href="/go/" class="btn-green-big">📅 CHECK IN NOW</a>
+                    <a href="https://diuwin.yor.uk.com/contact-us/" class="btn-outline-g">📞 Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-section">
+        <div class="how-inner">
+            <h2>📌 How to Earn the Attendance Bonus</h2>
+            <p class="sub">Simple daily steps to collect your consecutive login rewards</p>
+            <div class="how-steps">
+                <div class="h-step">
+                    <div class="icon">📱</div>
+                    <h4>Step 1 — Register</h4>
+                    <p>Create your free Diuwin account and make your <strong>first deposit</strong> to become eligible.</p>
+                </div>
+                <div class="h-step">
+                    <div class="icon">📅</div>
+                    <h4>Step 2 — Login Daily</h4>
+                    <p>Login to the Diuwin app <strong>every day</strong> without missing a single day to build your streak.</p>
+                </div>
+                <div class="h-step">
+                    <div class="icon">✅</div>
+                    <h4>Step 3 — Check In</h4>
+                    <p>Tap the <strong>Attendance</strong> button in the app once every day to register your attendance.</p>
+                </div>
+                <div class="h-step">
+                    <div class="icon">💰</div>
+                    <h4>Step 4 — Collect Rewards</h4>
+                    <p>Your attendance bonus is credited automatically based on how many <strong>consecutive days</strong> you've logged in!</p>
+                </div>
+                <div class="h-step">
+                    <div class="icon">🔁</div>
+                    <h4>Step 5 — Keep the Streak</h4>
+                    <p>Don't break the streak! Missing a day <strong>resets to Day 1</strong>. Stay consistent for maximum rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RULES ===== -->
+    <section class="game-rules-section" id="rules">
+        <div class="gr-inner">
+            <h2>📋 Game Rules</h2>
+            <p class="sub">Read these rules carefully before participating</p>
+            <div class="rule-items">
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">The higher the number of consecutive login days, the more rewards you get — up to <strong>7 consecutive days</strong>.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">During the activity, please <strong>check in once a day</strong>. Only one attendance can be recorded per day.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">Players with <strong>no deposit history cannot claim</strong> the bonus. You must have made at least one deposit.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">Deposit requirements must be <strong>met from Day 1</strong> of the attendance cycle..</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">The platform reserves the right to <strong>final interpretation</strong> of this activity.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">When you encounter problems, please <strong>contact Customer Service</strong> for assistance.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BOTTOM ===== -->
+    <section class="cta-bottom">
+        <h2>📅 Start Your Attendance Streak!</h2>
+        <p>Login every day, check in, and win up to <strong>₹6,000</strong> on Day 7. Don't miss a day!</p>
+        <a href="/go/" class="btn-cta-white">🎁 REGISTER &amp; CHECK IN</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-bar">
+                &copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

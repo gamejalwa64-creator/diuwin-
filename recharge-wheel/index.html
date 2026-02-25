@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Wheel Spin - Diuwin | Deposit & Win Up to ₹1,00,000</title>
+    <meta name="description" content="Spin the Diuwin Recharge Wheel! Make a deposit and earn free spins to win cash prizes up to ₹1,00,000. The more you recharge, the more spins you get!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diuwin.yor.uk.com/recharge-wheel/">
+
+    <link rel="icon" href="/wp-content/uploads/2025/04/DIUWIN-ORIGINAL-LOGO.webp" sizes="32x32">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ─── HERO ─── */
+        .rw-hero {
+            background: linear-gradient(135deg, #054d1c 0%, #0d7a3e 50%, #13BF77 100%);
+            padding: 56px 20px 64px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rw-hero::before {
+            content: '💳';
+            position: absolute;
+            font-size: 180px;
+            opacity: 0.06;
+            left: -30px;
+            top: -20px;
+            transform: rotate(-15deg);
+        }
+
+        .rw-hero::after {
+            content: '🎡';
+            position: absolute;
+            font-size: 160px;
+            opacity: 0.06;
+            right: -20px;
+            bottom: -20px;
+            transform: rotate(15deg);
+        }
+
+        .rw-hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 18px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .rw-hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(30px, 7vw, 56px);
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.08;
+            margin-bottom: 10px;
+        }
+
+        .rw-hero h1 span { color: #ffd200; }
+
+        .rw-hero p {
+            font-size: 16px;
+            color: rgba(255,255,255,0.88);
+            max-width: 520px;
+            margin: 0 auto 30px;
+            line-height: 1.65;
+        }
+
+        .rw-hero p strong { color: #ffd200; }
+
+        .hero-stat-row {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+
+        .hero-stat { text-align: center; }
+        .hero-stat .n { font-family: 'Oswald', sans-serif; font-size: 30px; font-weight: 700; color: #ffd200; }
+        .hero-stat .l { font-size: 11px; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; }
+
+        .hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+        .btn-gold {
+            display: inline-block;
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            color: #5a3000;
+            font-size: 16px; font-weight: 900;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 22px rgba(255,210,0,0.45);
+            transition: transform 0.2s;
+        }
+        .btn-gold:hover { transform: translateY(-3px); }
+
+        .btn-outline-wh {
+            display: inline-block;
+            background: transparent; color: #fff;
+            font-size: 15px; font-weight: 700;
+            padding: 13px 26px; border-radius: 50px;
+            text-decoration: none;
+            border: 2.5px solid rgba(255,255,255,0.55);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-outline-wh:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
+
+        /* ─── COMPARISON BANNER ─── */
+        .compare-bar {
+            background: #fff7e0;
+            border-top: 3px solid #ffd200;
+            border-bottom: 3px solid #ffd200;
+            padding: 18px 20px;
+        }
+        .compare-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .compare-inner p { font-size: 13px; color: #7a5000; line-height: 1.55; }
+        .compare-inner p strong { color: #c04000; }
+        .compare-sep { font-size: 22px; flex-shrink: 0; }
+
+        .cb-card {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            background: #fff;
+            border-radius: 12px;
+            padding: 14px 16px;
+            border: 2px solid #eee;
+            flex: 1;
+            min-width: 210px;
+            max-width: 360px;
+        }
+        .cb-card.active { border-color: #13BF77; }
+        .cb-card.muted { border-color: #f0811a; opacity: 0.75; }
+        .cb-icon { font-size: 28px; flex-shrink: 0; }
+        .cb-body h4 { font-size: 14px; font-weight: 800; color: #1a1a1a; margin-bottom: 4px; }
+        .cb-body p { font-size: 12.5px; color: #666; line-height: 1.5; }
+        .cb-tag { display: inline-block; font-size: 10px; font-weight: 800; padding: 2px 10px; border-radius: 10px; margin-top: 6px; text-transform: uppercase; }
+        .cb-tag.green { background: #e6fff3; color: #0a6932; }
+        .cb-tag.orange { background: #fff0e6; color: #a33000; }
+
+        /* ─── LAYOUT: POSTER + TABLE ─── */
+        .rw-layout {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 56px 20px;
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .rw-poster { flex: 0 0 auto; }
+        .rw-poster img {
+            width: min(260px, 88vw);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 3px solid #fff;
+        }
+
+        .rw-content { flex: 1; min-width: 270px; }
+
+        .rw-content h2 { font-size: 22px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .rw-content .sub { font-size: 14px; color: #888; margin-bottom: 20px; }
+
+        /* Activity Details Table */
+        .activity-table-wrap {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .activity-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .activity-table thead tr { background: #13BF77; }
+        .activity-table thead th {
+            color: #fff;
+            font-weight: 800;
+            padding: 13px 16px;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+        .activity-table thead th:last-child { border-right: none; }
+
+        .activity-table tbody tr { border-bottom: 1px solid #eee; }
+        .activity-table tbody tr:last-child { border-bottom: none; }
+        .activity-table tbody tr:hover { background: #f0faf5; }
+
+        .activity-table tbody td {
+            padding: 12px 16px;
+            text-align: center;
+            color: #444;
+            font-weight: 600;
+            border-right: 1px solid #eee;
+        }
+        .activity-table tbody td:last-child { border-right: none; }
+        .activity-table tbody td.dep-amt { color: #e53935; font-weight: 800; }
+        .activity-table tbody td.spins { font-size: 18px; font-weight: 900; color: #13BF77; }
+        .activity-table tbody td.time { font-size: 12px; color: #888; }
+
+        /* Spin counter label */
+        .spin-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 800;
+            padding: 8px 18px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
+
+        /* info/warn boxes */
+        .info-box {
+            background: linear-gradient(135deg, #f0fdf8, #e6fbf0);
+            border: 1.5px solid rgba(19,191,119,0.3);
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13.5px;
+            color: #1a6b40;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+        .info-box strong { font-weight: 800; }
+
+        .warn-box {
+            background: linear-gradient(135deg, #fff8f0, #fff2e0);
+            border: 1.5px solid rgba(255,140,0,0.3);
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 13.5px;
+            color: #7a4500;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+        .warn-box strong { color: #e53935; }
+
+        /* prize wheel image display */
+        .wheel-preview {
+            border-radius: 18px;
+            overflow: hidden;
+            background: linear-gradient(160deg, #ffd200 0%, #f7971e 100%);
+            padding: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .wheel-preview .wheel-emoji { font-size: 90px; margin-bottom: 8px; }
+        .wheel-preview p { font-size: 14px; color: #5a3000; font-weight: 700; margin: 0; }
+
+        /* prize tiers */
+        .prize-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .prize-item {
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            color: #fff;
+            border-radius: 12px;
+            padding: 12px 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 3px 12px rgba(19,191,119,0.3);
+        }
+        .prize-item small { display: block; font-size: 10px; font-weight: 600; opacity: 0.8; margin-top: 2px; }
+
+        /* CTA button */
+        .btn-green-big {
+            display: inline-block;
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            color: #fff;
+            font-size: 15px; font-weight: 900;
+            padding: 14px 32px; border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(19,191,119,0.4);
+            transition: transform 0.2s;
+        }
+        .btn-green-big:hover { transform: translateY(-3px); }
+
+        /* ─── RULES SECTION ─── */
+        .rw-rules { background: #f5f7fa; padding: 56px 20px; }
+        .rw-rules-inner { max-width: 820px; margin: 0 auto; }
+        .rw-rules-inner h2 { font-size: 22px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .rw-rules-inner .sub { font-size: 14px; color: #888; margin-bottom: 26px; }
+
+        .rule-items { display: flex; flex-direction: column; gap: 12px; }
+        .rule-item {
+            display: flex; gap: 14px; align-items: flex-start;
+            background: #fff; border-radius: 12px;
+            padding: 16px 18px;
+            border-left: 4px solid #13BF77;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+        }
+        .rule-diamond { color: #13BF77; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+        .rule-text { font-size: 14px; color: #444; line-height: 1.65; }
+        .rule-text strong { color: #e53935; }
+        .rule-text .highlight { color: #13BF77; font-weight: 800; }
+
+        /* ─── ACTIVITY RULES (numbered) ─── */
+        .activity-rules { background: #fff; padding: 56px 20px; }
+        .ar-inner { max-width: 820px; margin: 0 auto; }
+        .ar-inner h2 { font-size: 22px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .ar-inner .sub { font-size: 14px; color: #888; margin-bottom: 26px; }
+
+        .ar-cards { display: flex; flex-direction: column; gap: 14px; }
+        .ar-card {
+            background: #f9f9f9;
+            border-radius: 16px;
+            padding: 20px 22px;
+            display: flex; gap: 16px; align-items: flex-start;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+        }
+        .ar-num-badge {
+            width: 36px; height: 36px; border-radius: 14px;
+            background: linear-gradient(135deg, #13BF77, #0da864);
+            color: #fff; font-size: 16px; font-weight: 900;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .ar-body h4 { font-size: 15px; font-weight: 800; color: #1a1a1a; margin-bottom: 5px; }
+        .ar-body p { font-size: 13.5px; color: #666; line-height: 1.65; }
+        .ar-body p em { color: #888; font-style: italic; }
+
+        /* ─── EVENT DESCRIPTION ─── */
+        .event-desc { background: #f5f7fa; padding: 56px 20px; }
+        .ed-inner { max-width: 820px; margin: 0 auto; }
+        .ed-inner h2 { font-size: 22px; font-weight: 900; color: #1a1a1a; margin-bottom: 6px; }
+        .ed-inner .sub { font-size: 14px; color: #888; margin-bottom: 26px; }
+
+        .ed-blocks { display: flex; flex-direction: column; gap: 12px; }
+        .ed-block { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.05); }
+        .ed-block-header {
+            background: #13BF77;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 14px; font-weight: 800;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .ed-block-body { padding: 14px 18px; font-size: 14px; color: #444; line-height: 1.65; }
+        .ed-block-body strong { color: #e53935; }
+        .ed-block-body .vip-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+        .vip-tag { background: #e6fff3; color: #0a6932; font-size: 11px; font-weight: 800; padding: 3px 10px; border-radius: 10px; }
+
+        /* ─── CTA BOTTOM ─── */
+        .cta-bottom {
+            background: linear-gradient(135deg, #ffd200, #f7971e);
+            padding: 56px 20px;
+            text-align: center;
+        }
+        .cta-bottom h2 { font-size: 28px; font-weight: 900; color: #5a2d00; margin-bottom: 8px; }
+        .cta-bottom p { font-size: 15px; color: rgba(90,45,0,0.8); max-width: 420px; margin: 0 auto 24px; line-height: 1.6; }
+        .cta-bottom p strong { color: #054d1c; }
+        .btn-green-cta {
+            display: inline-block; background: #054d1c; color: #ffd200;
+            font-size: 18px; font-weight: 900; padding: 16px 52px;
+            border-radius: 50px; text-decoration: none;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .btn-green-cta:hover { transform: translateY(-4px); }
+
+        /* RESPONSIVE */
+        @media (max-width: 680px) {
+            .rw-layout { flex-direction: column; align-items: center; }
+            .compare-inner { flex-direction: column; }
+            .prize-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body class="home-page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="site-logo">
+                <a href="https://diuwin.yor.uk.com/" title="Diuwin">
+                    <img src="/wp-content/uploads/2024/09/cropped-DiuWin.webp" alt="Diuwin Logo" width="320" height="84" class="logo-img">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-menu-toggle">
+                <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"/></svg>
+            </button>
+            <nav class="main-navigation" id="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item login-btn"><a href="/go/">Log in</a></li>
+                    <li class="nav-item register-btn"><a href="/go/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="rw-hero">
+        <div class="badge">💳 Deposit & Spin to Win</div>
+        <h1>Recharge <span>Wheel</span></h1>
+        <h1>Spin <span>Up to ₹1,00,000</span></h1>
+        <p>Make a deposit and earn <strong>free spins</strong> on the Recharge Wheel. The more you recharge, the more spins you receive — each spin is a chance to win huge cash prizes!</p>
+
+        <div class="hero-stat-row">
+            <div class="hero-stat">
+                <div class="n">₹1,00,000</div>
+                <div class="l">Max Prize Per Spin</div>
+            </div>
+            <div class="hero-stat">
+                <div class="n">+5 Spins</div>
+                <div class="l">Max Spins (₹1L deposit)</div>
+            </div>
+            <div class="hero-stat">
+                <div class="n">00:00</div>
+                <div class="l">Daily Reset Time</div>
+            </div>
+        </div>
+
+        <div class="hero-btns">
+            <a href="/go/" class="btn-gold">💰 RECHARGE &amp; SPIN NOW</a>
+            <a href="#rules" class="btn-outline-wh">📋 View Rules</a>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON BANNER ===== -->
+    <div class="compare-bar">
+        <div class="compare-inner">
+            <p style="font-weight:700; color:#444; flex-basis:100%; text-align:center; margin-bottom:10px;">
+                ⚠️ <strong>Not sure which wheel is which?</strong> Here's the difference:
+            </p>
+
+            <!-- Recharge Wheel (THIS PAGE) -->
+            <div class="cb-card active">
+                <div class="cb-icon">💳</div>
+                <div class="cb-body">
+                    <h4>Recharge Wheel <em>(this page)</em></h4>
+                    <p>Earn spins by <strong>making deposits</strong>. The bigger your recharge, the more spins you get. Prizes up to <strong>₹1,00,000</strong>.</p>
+                    <span class="cb-tag green">✅ You are here</span>
+                </div>
+            </div>
+
+            <div class="compare-sep">vs</div>
+
+            <!-- Invite Wheel (link to other page) -->
+            <div class="cb-card muted">
+                <div class="cb-icon">👥</div>
+                <div class="cb-body">
+                    <h4><a href="/invite-wheel/" style="color:#c04000; text-decoration:none;">Invite Wheel →</a></h4>
+                    <p>Earn spins by <strong>inviting friends</strong> who register and deposit. Prizes from <strong>₹10 to ₹198</strong>. Requires referrals.</p>
+                    <span class="cb-tag orange">🔗 Visit Invite Wheel page</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== POSTER + ACTIVITY TABLE ===== -->
+    <div style="background:#fff;">
+        <div class="rw-layout">
+
+            <!-- App Screenshot -->
+            <div class="rw-poster">
+                <img src="/6120657932920753562_121.jpg"
+                     alt="Diuwin Recharge Wheel Spin App Screenshot - Activity Details Table"
+                     loading="lazy">
+            </div>
+
+            <!-- Right Content -->
+            <div class="rw-content">
+                <div class="spin-label">🎡 How Many Spins Do I Get?</div>
+                <h2>Activity Details — Recharge to Spin</h2>
+                <p class="sub">Deposit any amount below to earn the corresponding number of free wheel spins today</p>
+
+                <div class="activity-table-wrap">
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Task (Total Deposit Balance)</th>
+                                <th>Number of Spins</th>
+                                <th>Spin Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="dep-amt">₹500.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+1</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹1,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+1</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹2,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+1</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹5,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+2</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹10,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+3</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹50,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+4</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                            <tr>
+                                <td class="dep-amt">₹1,00,000.00<br><small style="color:#aaa;font-weight:400;">Total Deposit Balance</small></td>
+                                <td class="spins">+5</td>
+                                <td class="time">00:00–23:59</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-box">
+                    ⏰ <strong>Lottery Reset:</strong> The lottery round starts every morning at <strong>00:00</strong>. After making your deposit, wait <strong>5 minutes</strong> before the draw wheel becomes active.
+                </div>
+
+                <div class="info-box">
+                    🎁 <strong>Example:</strong> If your single deposit on the same day exceeds <strong style="color:#e53935;">₹1,00,000</strong>, you will receive <strong>5 lucky draw opportunities</strong>. Spins are valid for the same day only — they <strong>cannot be accumulated</strong> to the next day!
+                </div>
+
+                <a href="/go/" class="btn-green-big">💳 DEPOSIT &amp; GET SPINS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WHEEL PRIZES ===== -->
+    <section style="background:#f5f7fa; padding: 56px 20px;">
+        <div style="max-width:680px; margin:0 auto; text-align:center;">
+            <h2 style="font-size:22px; font-weight:900; color:#1a1a1a; margin-bottom:6px;">🎰 Possible Wheel Prizes</h2>
+            <p style="font-size:14px; color:#888; margin-bottom:26px;">Each spin gives you a chance to win one of these prizes</p>
+
+            <div class="prize-grid">
+                <div class="prize-item">₹5<small>Prize</small></div>
+                <div class="prize-item">₹10<small>Prize</small></div>
+                <div class="prize-item">₹20<small>Prize</small></div>
+                <div class="prize-item">₹50<small>Prize</small></div>
+                <div class="prize-item">₹100<small>Prize</small></div>
+                <div class="prize-item">₹1,000<small>Prize</small></div>
+                <div class="prize-item">₹10,000<small>Prize</small></div>
+                <div class="prize-item">₹1,00,000<small>Grand Prize!</small></div>
+            </div>
+
+            <p style="font-size:13px; color:#999;">Prizes are distributed randomly per spin. Monetary rewards are automatically credited to your member account.</p>
+        </div>
+    </section>
+
+    <!-- ===== GAME RULES ===== -->
+    <section class="rw-rules" id="rules">
+        <div class="rw-rules-inner">
+            <h2>📋 Game Rules</h2>
+            <p class="sub">Read all rules carefully before participating in the Recharge Wheel</p>
+            <div class="rule-items">
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">Members must reach the <span class="highlight">single deposit amount</span> and <span class="highlight">cumulative deposit amount</span> to be eligible to participate in the lottery.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">Conditions for withdrawal of wheel rewards: <strong>1 times turnover</strong> is required before you can withdraw your wheel prize winnings.</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">If you receive <strong>monetary rewards</strong>, there is no need to apply — the system will <strong>automatically add them to your member ID</strong>. (Please contact customer service to receive physical rewards.)</div>
+                </div>
+                <div class="rule-item">
+                    <div class="rule-diamond">◆</div>
+                    <div class="rule-text">The lottery round starts every morning at <strong style="color:#13BF77;">00:00</strong>. After making your deposit, you need to <strong>wait 5 minutes</strong> before the draw wheel starts. Spins cannot be accumulated to the next day!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACTIVITY RULES ===== -->
+    <section class="activity-rules">
+        <div class="ar-inner">
+            <h2>📑 Activity Rules</h2>
+            <p class="sub">Official terms governing this promotion</p>
+            <div class="ar-cards">
+                <div class="ar-card">
+                    <div class="ar-num-badge">01</div>
+                    <div class="ar-body">
+                        <h4>One-Time Use Per Account</h4>
+                        <p>The event is effective from now on. The discount can only be used <strong>once per address</strong>, per email address, per phone number and for the same payment method (debit/credit card/bank account) and IP address.</p>
+                        <p><em>If a member applies repeatedly, the company reserves the right to cancel or withdraw member bonuses.</em></p>
+                    </div>
+                </div>
+                <div class="ar-card">
+                    <div class="ar-num-badge">02</div>
+                    <div class="ar-body">
+                        <h4>Designed for Genuine Players Only</h4>
+                        <p>All offers are specially designed for players. If any group or individual is found to be <strong>dishonestly withdrawing bonuses</strong> or threatening or abusing company offers, the company reserves the right to <strong>freeze or cancel</strong> the account and account balance of that group or individual.</p>
+                    </div>
+                </div>
+                <div class="ar-card">
+                    <div class="ar-num-badge">03</div>
+                    <div class="ar-body">
+                        <h4>Platform's Final Right</h4>
+                        <p>The platform reserves the right of <strong>final outcome</strong> of this event; and the right to modify or terminate the campaign without prior notice. These terms apply to all offers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENT DESCRIPTION ===== -->
+    <section class="event-desc">
+        <div class="ed-inner">
+            <h2>📌 Event Description</h2>
+            <p class="sub">Full participation conditions and event details</p>
+            <div class="ed-blocks">
+                <div class="ed-block">
+                    <div class="ed-block-header">▶ Activity Time</div>
+                    <div class="ed-block-body">From <strong>now on</strong> — this event is ongoing and active immediately.</div>
+                </div>
+                <div class="ed-block">
+                    <div class="ed-block-header">▶ Validity Period</div>
+                    <div class="ed-block-body"><strong>Official website notification shall prevail.</strong> The validity period is subject to platform announcements.</div>
+                </div>
+                <div class="ed-block">
+                    <div class="ed-block-header">▶ Eligibility</div>
+                    <div class="ed-block-body">Members whose <strong>single deposit amount</strong> or <strong>accumulated deposit amount</strong> reaches the set amount can participate in the lottery.</div>
+                </div>
+                <div class="ed-block">
+                    <div class="ed-block-header">▶ Conditions of Participation</div>
+                    <div class="ed-block-body">
+                        Members who meet the requirements of the following VIP levels can participate in the Recharge Wheel event. A <strong>bank card must be bound</strong> to your account.
+                        <div class="vip-tags">
+                            <span class="vip-tag">VIP 1</span>
+                            <span class="vip-tag">VIP 2</span>
+                            <span class="vip-tag">VIP 3</span>
+                            <span class="vip-tag">VIP 4</span>
+                            <span class="vip-tag">VIP 5</span>
+                            <span class="vip-tag">VIP 6</span>
+                            <span class="vip-tag">VIP 7</span>
+                            <span class="vip-tag">VIP 8</span>
+                            <span class="vip-tag">VIP 9</span>
+                            <span class="vip-tag">VIP 10</span>
+                        </div>
+                        <p style="margin-top:10px; font-size:13px; color:#888;">Hundreds of millions of cash and many other prizes are up for grabs. Get ready for endless surprises and grand prizes every day!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BOTTOM CTA ===== -->
+    <section class="cta-bottom">
+        <h2>🎡 Spin the Recharge Wheel!</h2>
+        <p>Deposit <strong>₹500+</strong> today and earn your first free spin — you could win up to <strong>₹1,00,000 instantly!</strong></p>
+        <a href="/go/" class="btn-green-cta">💳 RECHARGE &amp; SPIN NOW</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://diuwin.yor.uk.com/about-us/">About Us</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/responsible-gaming/">Responsible Gaming</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/disclaimer/">Disclaimer</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/terms-conditions/">Terms &amp; Conditions</a></li>
+                    <li><a href="https://diuwin.yor.uk.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-bar">
+                &copy; 2026 <a href="https://diuwin.yor.uk.com/">Diuwin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
