@@ -1,11 +1,7 @@
 User-agent: *
 Allow: /
 
-# Block junk/system folders from being indexed
-Disallow: /go/
-Disallow: /assets/
-Disallow: /wp-includes/
-Disallow: /wp-content/uploads/
 
 # Sitemap location
 Sitemap: https://diuwin.yor.uk.com/sitemap.xml
+
